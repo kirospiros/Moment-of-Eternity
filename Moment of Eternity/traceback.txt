@@ -1,36 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00keymap.rpy", line 473, in script
-    python hide:
-  File "renpy/common/00keymap.rpy", line 473, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 492, in _execute_python_hide
-    renpy.save("_reload-1", "reload save game")
-AttributeError: 'NoneType' object has no attribute 'stores'
+  File "game/chapter1.rpy", line 577, in script
+    show natali_concerned fastdissolve
+Exception: Image 'natali_concerned' does not accept attributes 'fastdissolve'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00keymap.rpy", line 473, in script
-    python hide:
-  File "E:\renpy-7.3.2-sdk to home\renpy-7.3.2-sdk\renpy\ast.py", line 1111, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "E:\renpy-7.3.2-sdk to home\renpy-7.3.2-sdk\renpy\python.py", line 1049, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/00keymap.rpy", line 473, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 492, in _execute_python_hide
-    renpy.save("_reload-1", "reload save game")
-  File "E:\renpy-7.3.2-sdk to home\renpy-7.3.2-sdk\renpy\loadsave.py", line 382, in save
-    roots = renpy.game.log.freeze(None)
-  File "E:\renpy-7.3.2-sdk to home\renpy-7.3.2-sdk\renpy\rollback.py", line 1017, in freeze
-    self.complete(False)
-  File "E:\renpy-7.3.2-sdk to home\renpy-7.3.2-sdk\renpy\rollback.py", line 584, in complete
-    self.current.stores[name], self.current.delta_ebc[name] = delta
-AttributeError: 'NoneType' object has no attribute 'stores'
+  File "game/chapter1.rpy", line 577, in script
+    show natali_concerned fastdissolve
+  File "E:\renpy-7.3.2-sdk to home\renpy-7.3.2-sdk\renpy\ast.py", line 1388, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "E:\renpy-7.3.2-sdk to home\renpy-7.3.2-sdk\renpy\ast.py", line 1351, in show_imspec
+    renpy.config.show(name,
+  File "E:\renpy-7.3.2-sdk to home\renpy-7.3.2-sdk\renpy\exports.py", line 686, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "E:\renpy-7.3.2-sdk to home\renpy-7.3.2-sdk\renpy\display\image.py", line 413, in find_target
+    self.target = target._duplicate(a)
+  File "E:\renpy-7.3.2-sdk to home\renpy-7.3.2-sdk\renpy\display\core.py", line 397, in _duplicate
+    args.extraneous()
+  File "E:\renpy-7.3.2-sdk to home\renpy-7.3.2-sdk\renpy\display\core.py", line 265, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'natali_concerned' does not accept attributes 'fastdissolve'.
 
 Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.0.22062402
 Moment Of Eternity 0.03
-Fri Jul  8 17:38:47 2022
+Sun Nov 13 15:57:37 2022

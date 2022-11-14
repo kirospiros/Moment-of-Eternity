@@ -2,6 +2,7 @@
 define enj = Character('Энджи', color="#7B68EE")
 define phil = Character('Фил', color="#F0FFFF")
 define key = Character('Кей', color="#8B008B")
+define nat = Character('Натали', color="#B0E0E6")
 define v = Character('Голос', color="#ffffff")
 define sp = Character('Диктор', color="#c8ffc8")
 define wa = Character('Официант', color="#c8ffc8")

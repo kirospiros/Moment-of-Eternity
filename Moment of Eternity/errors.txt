@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/chapter1.rpy", line 342: expected statement.
-    enji_angried with averagedissolve
-                 ^
+File "game/chapter1.rpy", line 667: expected 'image_name_component' not found.
+    show hide phil_casual with fastdissolve
+        ^
 
 Ren'Py Version: Ren'Py 8.0.0.22062402
-Tue Jul 19 23:15:41 2022
+Sun Nov 27 23:44:22 2022

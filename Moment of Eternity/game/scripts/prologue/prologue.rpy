@@ -1,4 +1,4 @@
-label start:
+label prologue_start:
 
     # Пролог: Воспоминания о грядущем - Мимолётный сон. | Prologue: Memories of the Future - A Fleeting Dream.
 
@@ -1532,8 +1532,8 @@ label choice3_no:
 
 label choice3_yes:
     $ enj_p += 1
-    show enji_smilling_down with averagedissolve
-    pause 0.5
+    show enji_smiling_down with averagedissolve
+    pause 0.8
     show enji_siding with fastdissolve
     hide enji_smilling_down
     show enji_usual  with fastdissolve
@@ -1589,9 +1589,9 @@ label choice3_done:
     enj "..."
     stop music fadeout 3
     "Похоже, мой обеспокоенный вид слегка позабавил Энджи."
-    show enji_evil_smilling with fastdissolve
-    pause 0.4
-    hide enji_evil_smilling with averagedissolve
+    show enji_evil_smiling with fastdissolve
+    pause 0.8
+    hide enji_evil_smiling with averagedissolve
     "Оставляя меня в недоумении, она тихо ушла."
     "Я какое-то время стоял и размышлял о кое-чем более важном:"
     me "\"Был ли это своеобразный способ Энджи отомстить мне за случившееся утром?\""

@@ -1,0 +1,12 @@
+# music
+define audio.deepspace = "music/DeepSpace.mp3"
+define audio.solace = "music/Solace.mp3"
+define audio.november = "music/November.mp3"
+define audio.whales = "music/Whales.mp3"
+define audio.lounge = "music/The_Lounge.mp3"
+define audio.coolride = "music/CoolRide.mp3"
+define audio.corporationmotivation = "music/CorporationMotivation.mp3"
+define audio.different = "music/Different.mp3"
+define audio.goodvibes = "music/GoodVibes.mp3"
+define audio.interconnected = "music/Interconnected.mp3"
+define audio.drifting2 = "music/Drifting2.mp3"

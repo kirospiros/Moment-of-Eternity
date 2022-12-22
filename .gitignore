@@ -85,9 +85,11 @@ env.bak/
 venv.bak/
 
 # RenPy
-errors.txt
-log.txt
 Test/
-.vscode/
-saves/
-cache/
+*.vscode/
+**/saves/
+**/cache/
+*.rpyc
+log.txt
+traceback.txt
+errors.txt

@@ -10,14 +10,14 @@ define superfastdissolve = Dissolve(0.1)
 init:
 
     # character points
-    $ enji_p = 0
-    $ phil_p = 0
-    $ key_p = 0
+    $ enji_points = 0
+    $ phil_points = 0
+    $ key_points = 0
 
     # flagues
-    $ flague_phil_proposition = 0
-    $ flague_roof = 0
-    $ flag_prologue_office_retard = 0
+    $ flag_phil_proposition: bool = False
+    $ flag_roof = 0
+    $ flag_prologue_office_retard: bool = False
 
 
 label start:

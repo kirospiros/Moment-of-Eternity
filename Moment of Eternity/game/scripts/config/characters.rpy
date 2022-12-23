@@ -11,7 +11,4 @@ define character_name = "?"
 define current_color = "#ffffff"
 
 define unknown = Character(character_name, color=current_color)
-define un_n = Character('?', color="#B0E0E6")
-define un_s = Character('?', color="#FFE4E1")
 define system = Character('system', color="#B0E0E6")
-

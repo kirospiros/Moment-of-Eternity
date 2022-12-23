@@ -90,6 +90,7 @@ Test/
 **/saves/
 **/cache/
 *.rpyc
+*.mp3
 log.txt
 traceback.txt
 errors.txt

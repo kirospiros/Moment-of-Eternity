@@ -22,23 +22,27 @@ init python:
 ##
 ## Цвета текста в интерфейсе.
 
+## Цвет заголовка в игре.
+define gui.title_text_color = '#66ccff'
+## Цвет надписи версии в игре (рядом с заголовком).
+define gui.version_text_color = '#66ccff'
+
 ## Акцентный цвет используется в заголовках и подчёркнутых текстах.
 define gui.accent_color = '#4682B4'
-# #99ccff #4682B4 #3366ff
 ## Цвет, используемый в текстовой кнопке, когда она не выбрана и не наведена.
-define gui.idle_color = '#888888'
+define gui.idle_color = '#003366'
 
 ## Small_color используется в маленьком тексте, который должен быть ярче/темнее,
 ## для того, чтобы выделяться.
 define gui.idle_small_color = '#aaaaaa'
 
 ## Цвет, используемых в кнопках и панелях, когда они наведены.
-define gui.hover_color = '#c1e0ff'
+define gui.hover_color = '#66ccff'
 
 ## Цвет, используемый текстовой кнопкой, когда она выбрана, но не наведена.
 ## Кнопка может быть выбрана, если это текущий экран или текущее значение
 ## настройки.
-define gui.selected_color = '#ffffff'
+define gui.selected_color = '#ffcccc'
 
 ## Цвет, используемый текстовой кнопкой, когда она не может быть выбрана.
 define gui.insensitive_color = '#8888887f'
@@ -52,8 +56,20 @@ define gui.hover_muted_color = '#5b7a99'
 define gui.text_color = '#ffffff'
 define gui.interface_text_color = '#ffffff'
 
+## Цвет заголовков в пользовательском интерфейсе.
+define gui.label_text_color = '#003366'
+
 
 ## Шрифты и их размеры #########################################################
+
+## Шрифт заголовка в игре на главном экрана.
+define gui.title_text_font = "static/fonts/Eras_Medium_ITC.ttf"
+
+## Шрифт надписи версии в игре (рядом с заголовком).
+define gui.version_text_font = "static/fonts/Eras_Medium_ITC.ttf"
+
+## Шрифт надписи ярлыка в меню настроек.
+define gui.main_menu_label_text_font = "static/fonts/Old-Soviet.otf"
 
 ## Шрифт, используемый внутриигровым текстом.
 define gui.text_font = "DejaVuSans.ttf"
@@ -78,23 +94,28 @@ define gui.interface_text_size = 33
 ## Размер заголовков в пользовательском интерфейсе.
 define gui.label_text_size = 36
 
+## Размер заголовка `Настройки` в меню настроек.
+define gui.labelsettings_text_size = 36
+
 ## Размер текста на экране уведомлений.
 define gui.notify_text_size = 24
 
 ## Размер заголовка игры.
 define gui.title_text_size = 75
+## Размер надписи версии игры возле заголовка на главном меню.
+define gui.version_text_size = 33
 
 
 ## Главное и игровое меню. #####################################################
 
 ## Изображения, используемые в главном и игровом меню.
-define gui.main_menu_background = "gui/Moment of Eternity5.jpg"
-define gui.game_menu_background = "gui/Moment of Eternity.jpg"
+define gui.main_menu_background = "gui/main_menu.png"
+define gui.game_menu_background = "gui/game_menu.png"
 
 
 ## Диалог ######################################################################
 ##
-## Эти переменные контролируют, как диалог появляется на отдельной строчке.
+## Эти переменные контролируют, как диалог появляется начальной строчке.
 
 ## Высота текстового окна, содержащего диалог.
 define gui.textbox_height = 278
@@ -241,7 +262,7 @@ define config.thumbnail_width = 384
 define config.thumbnail_height = 216
 
 ## Количество колонок и рядов в таблице слотов.
-define gui.file_slot_cols = 3
+define gui.file_slot_cols = 2
 define gui.file_slot_rows = 2
 
 
@@ -252,7 +273,7 @@ define gui.file_slot_rows = 2
 
 ## Местоположение левого края навигационных кнопок по отношению к левому краю
 ## экрана.
-define gui.navigation_xpos = 60
+define gui.navigation_xpos = 170
 
 ## Вертикальная позиция индикатора пропуска.
 define gui.skip_ypos = 15

@@ -89,6 +89,9 @@ Test/
 *.vscode/
 **/saves/
 **/cache/
+**/saves/
+**/images/
+**/audio/
 *.rpyc
 *.mp3
 log.txt

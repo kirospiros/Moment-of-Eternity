@@ -18,12 +18,12 @@ define config.name = _("Moment Of Eternity")
 ## Определяет, показывать ли заголовок, данный выше, на экране главного меню.
 ## Установите на False, чтобы спрятать заголовок.
 
-define gui.show_name = False
+define gui.show_name = True
 
 
 ## Версия игры.
 
-define config.version = "0.03"
+define config.version = "0.04"
 
 
 ## Текст, помещённый в экран "Об игре". Поместите текст между тройными скобками.

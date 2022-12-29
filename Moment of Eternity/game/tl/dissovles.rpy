@@ -1,0 +1,5 @@
+define gigodissolve = Dissolve(3.3)
+define normdissolve = Dissolve(1.1)
+define slowdissolve = Dissolve(0.8)
+define averagedissolve = Dissolve(0.5)
+define fastdissolve = Dissolve(0.3)

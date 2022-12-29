@@ -35,6 +35,7 @@ style button_text is gui_text:
 
 style label_text is gui_text:
     properties gui.text_properties("label", accent=True)
+    # properties {"color":"#4682B4", "size":36, "xpos":450}
 
 style prompt_text is gui_text:
     properties gui.text_properties("prompt")
@@ -291,45 +292,39 @@ style quick_button_text:
 
 screen navigation():
 
-    vbox:
-        style_prefix "navigation"
+    style_prefix "navigation"
 
-        xpos gui.navigation_xpos
-        yalign 0.5
+    if main_menu:
 
-        spacing gui.navigation_spacing
+        textbutton _("Начать") xalign 0.083 yalign 0.35 action Start()
 
-        if main_menu:
+    else:
 
-            textbutton _("Начать") action Start()
+        textbutton _("История") xalign 0.085 yalign 0.3 action ShowMenu("history")
 
-        else:
+        textbutton _("Сохранить") xalign 0.06 yalign 0.35 action ShowMenu("save")
 
-            textbutton _("История") action ShowMenu("history")
+    textbutton _("Загрузить") xalign 0.057 yalign 0.40 action ShowMenu("load")
 
-            textbutton _("Сохранить") action ShowMenu("save")
+    textbutton _("Настройки") xalign 0.045 yalign 0.45 action ShowMenu("preferences")
 
-        textbutton _("Загрузить") action ShowMenu("load")
+    if _in_replay:
 
-        textbutton _("Настройки") action ShowMenu("preferences")
+        textbutton _("Завершить повтор") action EndReplay(confirm=True)
 
-        if _in_replay:
+    elif not main_menu:
 
-            textbutton _("Завершить повтор") action EndReplay(confirm=True)
+        textbutton _("Главное меню") xalign 0.084 yalign 0.1 action MainMenu()
 
-        elif not main_menu:
+    textbutton _("Об игре") xalign 0.05 yalign 0.5 action ShowMenu("about")
 
-            textbutton _("Главное меню") action MainMenu()
+    if renpy.variant("pc"):
 
-        textbutton _("Об игре") action ShowMenu("about")
+        ## Помощь не необходима и не относится к мобильным устройствам.
+        textbutton _("Помощь") xalign 0.035 yalign 0.55 action ShowMenu("help")
 
-        if renpy.variant("pc"):
-
-            ## Помощь не необходима и не относится к мобильным устройствам.
-            textbutton _("Помощь") action ShowMenu("help")
-
-            ## Кнопка выхода блокирована в iOS и не нужна на Android.
-            textbutton _("Выход") action Quit(confirm=not main_menu)
+        ## Кнопка выхода блокирована в iOS и не нужна на Android.
+        textbutton _("Выход") xalign 0.02 yalign 0.75 action Quit(confirm=not main_menu)
 
 
 style navigation_button is gui_button
@@ -341,6 +336,8 @@ style navigation_button:
 
 style navigation_button_text:
     properties gui.button_text_properties("navigation_button")
+    selected_outlines [ (absolute(1), "#000", absolute(0), absolute(0)) ]
+    hover_outlines [ (absolute(1), "#000", absolute(0), absolute(0)) ]
 
 
 ## Экран главного меню #########################################################
@@ -367,9 +364,13 @@ screen main_menu():
     ## содержание главного меню находится на экране навигации.
     use navigation
 
+    # В vbox добавлены параметры x и y-align для определения положения надписи
+    # наименования игры.
     if gui.show_name:
 
         vbox:
+            xalign 0.75
+            yalign 0.15
             text "[config.name!t]":
                 style "main_menu_title"
 
@@ -473,7 +474,7 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
     textbutton _("Вернуться"):
         style "return_button"
-
+        xalign 0.02 yalign 0.644
         action Return()
 
     label title
@@ -519,14 +520,17 @@ style game_menu_vscrollbar:
 style game_menu_side:
     spacing 15
 
+## `xpos` заменен на `xalign` для того чтобы переместить надпись в правый угол.
 style game_menu_label:
-    xpos 75
+    xalign 0.9
     ysize 180
 
 style game_menu_label_text:
     size gui.title_text_size
     color gui.accent_color
+    font gui.main_menu_label_text_font
     yalign 0.5
+    outlines [ (absolute(1), "#000", absolute(0), absolute(0)) ]
 
 style return_button:
     xpos gui.navigation_xpos
@@ -553,7 +557,7 @@ screen about():
 
         vbox:
 
-            label "[config.name!t]"
+            label "[config.name!t]\n"
             text _("Версия [config.version!t]\n")
 
             ## gui.about обычно установлено в options.rpy.
@@ -573,6 +577,10 @@ style about_text is gui_text
 
 style about_label_text:
     size gui.label_text_size
+    outlines [ (absolute(1), "#66ccff", absolute(0), absolute(0)) ]
+
+style about_text:
+    outlines [ (absolute(1), "#000", absolute(0), absolute(0)) ]
 
 
 ## Экраны загрузки и сохранения ################################################
@@ -668,10 +676,10 @@ screen file_slots(title):
                     textbutton _("{#quick_page}Б") action FilePage("quick")
 
                 ## range(1, 10) задаёт диапазон значений от 1 до 9.
-                for page in range(1, 10):
+                for page in range(1, 3):
                     textbutton "[page]" action FilePage(page)
 
-                textbutton _(">") action FilePageNext()
+                textbutton _(">") action FilePageNext(max=2)
 
 
 style page_label is gui_label
@@ -692,18 +700,33 @@ style page_label_text:
     text_align 0.5
     layout "subtitle"
     hover_color gui.hover_color
+    selected_color gui.selected_color
+    idle_outlines [ (absolute(1), "#66ccff", absolute(0), absolute(0)) ]
+    selected_outlines [ (absolute(1), "#000", absolute(0), absolute(0)) ]
+    hover_outlines [ (absolute(1), "#000", absolute(0), absolute(0)) ]
 
 style page_button:
     properties gui.button_properties("page_button")
 
 style page_button_text:
     properties gui.button_text_properties("page_button")
+    hover_color gui.hover_color
+    selected_color gui.selected_color
+    idle_outlines [ (absolute(1), "#66ccff", absolute(0), absolute(0)) ]
+    selected_outlines [ (absolute(1), "#000", absolute(0), absolute(0)) ]
+    hover_outlines [ (absolute(1), "#000", absolute(0), absolute(0)) ]
 
 style slot_button:
     properties gui.button_properties("slot_button")
 
 style slot_button_text:
     properties gui.button_text_properties("slot_button")
+    idle_color gui.idle_color
+    hover_color gui.hover_color
+    selected_color gui.selected_color
+    idle_outlines [ (absolute(1), "#66ccff", absolute(0), absolute(0)) ]
+    selected_outlines [ (absolute(1), "#000", absolute(0), absolute(0)) ]
+    hover_outlines [ (absolute(1), "#000", absolute(0), absolute(0)) ]
 
 
 ## Экран настроек ##############################################################
@@ -832,6 +855,8 @@ style pref_label:
 
 style pref_label_text:
     yalign 1.0
+    outlines [ (absolute(1), "#66ccff", absolute(0), absolute(0)) ]
+    color gui.idle_color
 
 style pref_vbox:
     xsize 338
@@ -845,6 +870,9 @@ style radio_button:
 
 style radio_button_text:
     properties gui.button_text_properties("radio_button")
+    idle_outlines [ (absolute(1), "#66ccff", absolute(0), absolute(0)) ]
+    selected_outlines [ (absolute(2), "#000", absolute(0), absolute(0)) ]
+    hover_outlines [ (absolute(2), "#000", absolute(0), absolute(0)) ]
 
 style check_vbox:
     spacing gui.pref_button_spacing
@@ -855,6 +883,9 @@ style check_button:
 
 style check_button_text:
     properties gui.button_text_properties("check_button")
+    idle_outlines [ (absolute(1), "#66ccff", absolute(0), absolute(0)) ]
+    selected_outlines [ (absolute(2), "#000", absolute(0), absolute(0)) ]
+    hover_outlines [ (absolute(2), "#000", absolute(0), absolute(0)) ]
 
 style slider_slider:
     xsize 525
@@ -869,6 +900,11 @@ style slider_button_text:
 
 style slider_vbox:
     xsize 675
+
+style mute_all_button_text:
+    idle_outlines [ (absolute(1), "#66ccff", absolute(0), absolute(0)) ]
+    selected_outlines [ (absolute(1), "#000", absolute(0), absolute(0)) ]
+    hover_outlines [ (absolute(1), "#000", absolute(0), absolute(0)) ]
 
 
 ## Экран истории ###############################################################
@@ -956,6 +992,7 @@ style history_text:
     min_width gui.history_text_width
     text_align gui.history_text_xalign
     layout ("subtitle" if gui.history_text_xalign else "tex")
+    outlines [ (absolute(1), "#000", absolute(0), absolute(0)) ]
 
 style history_label:
     xfill True
@@ -1111,6 +1148,9 @@ style help_button:
 
 style help_button_text:
     properties gui.button_text_properties("help_button")
+    idle_outlines [ (absolute(1), "#66ccff", absolute(0), absolute(0)) ]
+    selected_outlines [ (absolute(2), "#000", absolute(0), absolute(0)) ]
+    hover_outlines [ (absolute(2), "#000", absolute(0), absolute(0)) ]
 
 style help_label:
     xsize 375
@@ -1120,7 +1160,11 @@ style help_label_text:
     size gui.text_size
     xalign 1.0
     text_align 1.0
+    color gui.label_text_color
+    outlines [ (absolute(1), "#66ccff", absolute(0), absolute(0)) ]
 
+style help_text:
+    outlines [ (absolute(1), "#000", absolute(0), absolute(0)) ]
 
 
 ################################################################################

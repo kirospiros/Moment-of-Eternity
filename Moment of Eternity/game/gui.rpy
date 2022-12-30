@@ -80,7 +80,9 @@ define gui.name_text_font = "DejaVuSans.ttf"
 ## Шрифт, используемый текстом вне игры.
 define gui.interface_text_font = "DejaVuSans.ttf"
 
-#DejaVuSans.ttf
+## Шрифт, используемый в тексте вступления в новые главы
+define gui.intro_text_font = "static/fonts/DolomanPavljenko.otf"
+
 
 ## Размер нормального текста диалога.
 define gui.text_size = 33
@@ -104,6 +106,9 @@ define gui.notify_text_size = 24
 define gui.title_text_size = 75
 ## Размер надписи версии игры возле заголовка на главном меню.
 define gui.version_text_size = 33
+
+## Размер шрифта перед новыми главами
+define gui.intro_text_size = 72
 
 
 ## Главное и игровое меню. #####################################################

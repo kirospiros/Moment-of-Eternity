@@ -12,8 +12,10 @@
 С инструкцией по установке Git LFS можете ознакомиться по ссылке ниже:  
 [Git LFS](https://docs.github.com/ru/repositories/working-with-files/managing-large-files/installing-git-large-file-storage)  
 В процессе работы с Git LFS мы можете столкнуться с тем, что при использовании команды *git push* у вас будет запрашиваться пароль аутентификации для каждого LFS файла.  
-Чтобы обойти это выполните действия по инструкции ниже:  
-[Caching credentials in Git](https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git)  
+Обойти это можно несколькими путями - самый простой, отказаться от пароля для *rsa.pub* ключа:  
+[SSH Key passphrases](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases)  
+Лично я просто добавил *config* файл по инструкции в первом ответе:   
+[SSH Agent config](https://stackoverflow.com/questions/43371608/why-git-push-of-lfs-git-ask-password-3-times)  
 
 ## Обратная связь
 

@@ -11,6 +11,9 @@
 Вам будет доступен только файл указателя на медиа файлы (прикрепленные в ссылке выше).  
 С инструкцией по установке Git LFS можете ознакомиться по ссылке ниже:  
 [Git LFS](https://docs.github.com/ru/repositories/working-with-files/managing-large-files/installing-git-large-file-storage)  
+В процессе работы с Git LFS мы можете столкнуться с тем, что при использовании команды *git push* у вас будет запрашиваться пароль аутентификации для каждого LFS файла.  
+Чтобы обойти это выполните действия по инструкции ниже:  
+[Caching credentials in Git](https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git)  
 
 ## Обратная связь
 

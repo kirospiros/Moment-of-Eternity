@@ -313,4 +313,4 @@ label prologue_office_key_end_conversation:
 
     "Но, возможно, принятое решение ознаменует начало новых нежелательных приключений..."
 
-    jump chapter_1
+    jump chapter_1_start

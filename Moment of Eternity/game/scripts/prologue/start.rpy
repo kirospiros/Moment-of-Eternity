@@ -2,13 +2,14 @@ label prologue_start:
     # Пролог: Воспоминания о грядущем - Мимолётный сон.
     # Prologue: Memories of the Future - A Fleeting Dream.
 
-    scene bg_prologue_ru
-    with averagedissolve
-    $ renpy.pause(3.0)
-
-    scene bg_nothing
-    with averagedissolve
+    scene black with averagedissolve
     play music deepspace fadeout 0.7
+
+    show screen textmiddle("Пролог - точка отсчёта") with averagedissolve
+    $ renpy.pause(1.7)
+    hide screen textmiddle with averagedissolve
+
+    # hide screen textmiddle with averagedissolve
 
     vox "Я помню день, когда изменилось всё."
     vox "Тогда я стоял на холме..."

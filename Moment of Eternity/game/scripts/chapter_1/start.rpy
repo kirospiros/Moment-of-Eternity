@@ -1,8 +1,10 @@
 label chapter_1_start:
 
-    scene bg_chapter1_ru with averagedissolve
+    scene black with averagedissolve
 
-    $ renpy.pause(2.5)
+    show screen textmiddle("Глава I") with averagedissolve
+    $ renpy.pause(1.7)
+    hide screen textmiddle with averagedissolve
 
     if flag_phil_proposition:
         jump phil_home_start

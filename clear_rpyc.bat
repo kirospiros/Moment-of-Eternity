@@ -1,0 +1,1 @@
+del /q /s "Moment of Eternity\*.rpyc"

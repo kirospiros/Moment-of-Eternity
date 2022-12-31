@@ -93,6 +93,7 @@ Test/
 **/images/
 **/audio/
 *.rpyc
+*.rpymc
 *.mp3
 log.txt
 traceback.txt

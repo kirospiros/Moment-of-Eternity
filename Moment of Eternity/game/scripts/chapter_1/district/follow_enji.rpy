@@ -8,7 +8,7 @@ label chapter_1_follow_enji:
     "Останавливаться уже поздно, а необычное поведение Энджи всё еще кажется мне любопытным."
     "И спустя час..."
 
-    scene bg_cafe with slowdissolve
+    scene bg cafe chapter1 with slowdissolve
     pause(1.5)
 
     "{w=1}я оказался здесь..."
@@ -129,7 +129,7 @@ label chapter_1_watching_key:
     "Я промолчал. В любом случае, мне не очень приятно было застрять с ней в таком месте и особенно при таких обстоятельствах."
     "Даже без слов было понятно, что я чувствую."
 
-    scene bg_nothing with averagedissolve
+    scene black with averagedissolve
 
     "Выглядело так, будто она пытается ото всех спрятаться."
     "Если что, прикроюсь тем, что я искал дорогу и заблудился."
@@ -149,7 +149,7 @@ label chapter_1_watching_key:
     "Энджи похоже даже не думала об этом или не обращала внимания, а вот мне становилось неприятно."
     "А затем..."
 
-    scene bg_cafe with fastdissolve
+    scene bg cafe chapter1 with fastdissolve
 
     show enji_angry_speaking with fastdissolve
     hide enji_angried
@@ -269,7 +269,7 @@ label chapter_1_watching_key:
     "Я просто набрался терпения и ждал, когда этот момент моей жизни пройдет. Максимально незаметно, как мне хотелось."
     "Я точно не собирался спорить с ней или закатывать мнимую истерику просто из-за того, что мне стало скучно."
 
-    scene bg_sleep_district_evening with slowdissolve
+    scene bg district evening with slowdissolve
 
     pause(1.0)
     show enji_speaking_down with averagedissolve
@@ -310,7 +310,7 @@ label chapter_1_watching_key:
     "Слегка улыбаясь, она присела на корточки у стены."
     "Я по привычке засунул руки в карманы, закрыл глаза, уставился в небо и стал наслаждаться вечерним ветерком."
 
-    scene bg_nothing with fade
+    scene black with fade
 
     enji "Только не показывай, что можешь выглядеть еще более небрежно, чем во время сна в кафе."
 
@@ -326,7 +326,7 @@ label chapter_1_watching_key:
 
     me "Эй!"
 
-    scene bg_sleep_district_evening with averagedissolve
+    scene bg district evening with averagedissolve
 
     pause(0.5)
     show enji_contemptuous with fastdissolve
@@ -570,7 +570,7 @@ label chapter_1_meeting_natali:
 
 label chapter_1_district_evening:
 
-    scene bg_sleep_district_evening with fade
+    scene bg district evening with fade
 
     "На улице стало немного прохладнее."
     "Я решил проверить время на своих смарт часах."

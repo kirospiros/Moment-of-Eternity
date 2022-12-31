@@ -3,8 +3,7 @@ label prologue_office_entry:
     # Пролог: Утро - Город - Безделье и Работа
     # Prologue: Morning - Lounging and Working
 
-    scene bg_hall_labs_1
-    with slowdissolve
+    scene bg office halls labs v1 with slowdissolve
 
     "Спустя какое-то время мы уже оказались в холле того самого здания, где располагался один из отделов кампании, в котором я и работаю."
     "На общем фоне строение выделялось среди обычных городских высоток, имело гораздо больше этажей, просторные комнаты, и было оборудовано первоклассной техникой."
@@ -62,10 +61,8 @@ label prologue_office_corridor:
     "Мы поднялись по ступенькам, ведущих к лифту."
     "..."
 
-    show bg_nothing
-    with slowdissolve
-    scene bg_hall_labs_2
-    with slowdissolve
+    show black with slowdissolve
+    scene bg office halls labs v2 with slowdissolve
     play music drifting2 fadeout 2
 
     "И вскоре оказались на нужном этаже."
@@ -114,8 +111,7 @@ label prologue_office_natali_key_interrupt:
 
 label prologue_office_main_office:
 
-    scene bg_main_office
-    with normdissolve
+    scene bg office main with normdissolve
 
     "В общем зале было не очень шумно."
     "Солнечный свет слабо пробивался через большие окна."
@@ -204,8 +200,6 @@ label prologue_office_meeting_with_colleagues:
 
 label prologue_office_main_office_after_meeting:
 
-    scene bg_main_office with fastdissolve
-
     show phil_usual at center with fastdissolve
 
     me "\"Полегче, Фил\"."
@@ -243,6 +237,7 @@ label prologue_office_main_office_after_meeting:
     "Сейчас Кей скажет: \"Команда в сборе.\""
     "Каждый поприве́тствует друг друга, затем он раздаст указания, и дальше всё будет как обычно..."
 
+    hide key_usual_smiles
     show key_usual_speaking:
         xalign 0.45
         yalign 1.0
@@ -377,8 +372,6 @@ label prologue_office_enji_interrupt:
     "!?"
 
     play music different fadeout 2.5
-
-    scene bg_main_office
 
     show enji_angried with fastdissolve
 

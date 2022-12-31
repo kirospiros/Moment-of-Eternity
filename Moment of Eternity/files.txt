@@ -1,5 +1,3 @@
-chapter1.rpy
-chapter1.rpyc
 credits.rpy
 credits.rpyc
 gui.rpy
@@ -10,6 +8,35 @@ screens.rpy
 screens.rpyc
 script.rpy
 script.rpyc
+action editor\00warper.rpy
+action editor\00warper.rpyc
+action editor\ATL_functions.rpy
+action editor\ATL_functions.rpyc
+action editor\ActionEditor.rpy
+action editor\ActionEditor.rpyc
+action editor\ActionEditor_config.rpy
+action editor\ActionEditor_config.rpyc
+action editor\ActionEditor_screens.rpy
+action editor\ActionEditor_screens.rpyc
+action editor\image_viewer.rpy
+action editor\image_viewer.rpyc
+action editor\keymap.rpy
+action editor\keymap.rpyc
+action editor\menu_screen.rpy
+action editor\menu_screen.rpyc
+action editor\sound_viewer.rpy
+action editor\sound_viewer.rpyc
+audio\CoolRide.mp3
+audio\CorporationMotivation.mp3
+audio\DeepSpace.mp3
+audio\Different.mp3
+audio\Drifting2.mp3
+audio\GoodVibes.mp3
+audio\Interconnected.mp3
+audio\November.mp3
+audio\Solace.mp3
+audio\The_Lounge.mp3
+audio\Whales.mp3
 cache\bytecode.rpyb
 cache\py3analysis.rpyb
 cache\screens.rpyb
@@ -17,6 +44,7 @@ cache\shaders.txt
 gui\Moment of Eternity.jpg
 gui\Moment of Eternity5.jpg
 gui\frame.png
+gui\game_intro.png
 gui\game_menu.png
 gui\main_menu.png
 gui\namebox.png
@@ -95,58 +123,28 @@ gui\slider\vertical_hover_thumb.png
 gui\slider\vertical_idle_bar.png
 gui\slider\vertical_idle_thumb.png
 images\bg\author.jpg
-images\bg\bg_bathroom_1.jpg
-images\bg\bg_burned_city.jpg
 images\bg\bg_cafe.jpg
-images\bg\bg_chapter1_ru.jpg
-images\bg\bg_city_main_station.jpg
-images\bg\bg_city_main_station_norm.jpg
-images\bg\bg_city_streets.jpg
-images\bg\bg_city_train_station.jpg
-images\bg\bg_constructions.jpg
 images\bg\bg_field.jpg
-images\bg\bg_full_solo_evade.jpg
-images\bg\bg_hall_labs_1.jpg
-images\bg\bg_hall_labs_2.jpg
-images\bg\bg_hall_labs_cold.jpg
 images\bg\bg_head_office_sunset.jpg
-images\bg\bg_living_room_1.jpg
-images\bg\bg_living_room_2.jpg
-images\bg\bg_main_office.jpg
 images\bg\bg_mh_cabinet_evening.jpg
 images\bg\bg_mh_office.jpg
-images\bg\bg_my_hall_dawn.jpg
 images\bg\bg_my_hall_dusk.jpg
 images\bg\bg_my_hall_early_morning.jpg
-images\bg\bg_night_room_light_off_1.jpg
 images\bg\bg_night_room_light_off_2.jpg
-images\bg\bg_night_room_light_on.jpg
 images\bg\bg_nothing.jpg
 images\bg\bg_outdoor_stairs.jpg
 images\bg\bg_outdoor_stairs_gray.jpg
-images\bg\bg_park_dawn.jpg
 images\bg\bg_phil_room.jpg
 images\bg\bg_phil_room_blured1.jpg
 images\bg\bg_phil_room_blured2.jpg
 images\bg\bg_phil_room_evening.jpg
 images\bg\bg_phil_room_grey.jpg
 images\bg\bg_phil_room_white.jpg
-images\bg\bg_prologue_ru.jpg
 images\bg\bg_random_city.jpg
 images\bg\bg_rooftop_dusk.jpg
-images\bg\bg_room_dawn_1_light_off.jpg
-images\bg\bg_room_dawn_2_light_off.jpg
-images\bg\bg_room_dawn_3_light_off.jpg
-images\bg\bg_sky_dawn.jpg
 images\bg\bg_sleep_district_day.jpg
 images\bg\bg_sleep_district_evening.jpg
 images\bg\bg_sleep_district_morning.jpg
-images\bg\bg_station.jpg
-images\bg\bg_street_1_dawn.jpg
-images\bg\bg_street_2_dawn.jpg
-images\bg\bg_street_3_dawn.jpg
-images\bg\bg_street_dawn.jpg
-images\bg\bg_train_hall.jpg
 images\bg\bg_vending_machine.jpg
 images\bg\bg_white.jpg
 images\bg\credits.jpg
@@ -160,6 +158,61 @@ images\bg\music_4.jpg
 images\bg\solo_evade_black.jpg
 images\bg\special_thanks.jpg
 images\bg\work_cafe_evening.jpg
+images\bg\mc_home\bathroom.png
+images\bg\mc_home\hall sunrise.png
+images\bg\mc_home\living_room light_off.png
+images\bg\mc_home\living_room morning.png
+images\bg\mc_home\night_room light_off.png
+images\bg\mc_home\night_room light_on.png
+images\bg\mc_home\night_room sunrise.png
+images\bg\memories\burned_city.png
+images\bg\memories\constructions.png
+images\bg\office\halls labs v1.png
+images\bg\office\halls labs v2.png
+images\bg\office\main.png
+images\bg\outdoor\park sunrise.png
+images\bg\outdoor\sky sunrise.png
+images\bg\outdoor\street city v1.png
+images\bg\outdoor\street v1 sunrise.png
+images\bg\outdoor\street v2 sunrise.png
+images\bg\outdoor\street v3 sunrise.png
+images\bg\outdoor\street v4 sunrise.png
+images\bg\station\city v1.png
+images\bg\station\city v2.png
+images\bg\station\city v3.png
+images\bg\station\sunrise.png
+images\bg\station\train v1 hall.png
+images\bg\station\train v2 hall.png
+images\removed\bg\bg_bathroom_1.jpg
+images\removed\bg\bg_burned_city.jpg
+images\removed\bg\bg_chapter1_ru.jpg
+images\removed\bg\bg_city_main_station.jpg
+images\removed\bg\bg_city_main_station_norm.jpg
+images\removed\bg\bg_city_streets.jpg
+images\removed\bg\bg_city_train_station.jpg
+images\removed\bg\bg_constructions.jpg
+images\removed\bg\bg_full_solo_evade.jpg
+images\removed\bg\bg_hall_labs_1.jpg
+images\removed\bg\bg_hall_labs_2.jpg
+images\removed\bg\bg_hall_labs_cold.jpg
+images\removed\bg\bg_living_room_1.jpg
+images\removed\bg\bg_living_room_2.jpg
+images\removed\bg\bg_main_office.jpg
+images\removed\bg\bg_my_hall_dawn.jpg
+images\removed\bg\bg_night_room_light_on.jpg
+images\removed\bg\bg_park_dawn.jpg
+images\removed\bg\bg_prologue_ru.jpg
+images\removed\bg\bg_room_dawn_1_light_off.jpg
+images\removed\bg\bg_room_dawn_2_light_off.jpg
+images\removed\bg\bg_room_dawn_3_light_off.jpg
+images\removed\bg\bg_sky_dawn.jpg
+images\removed\bg\bg_station.jpg
+images\removed\bg\bg_street_1_dawn.jpg
+images\removed\bg\bg_street_2_dawn.jpg
+images\removed\bg\bg_street_3_dawn.jpg
+images\removed\bg\bg_street_dawn.jpg
+images\removed\bg\night_room light_off.jpg
+images\removed\bg\train hall.jpg
 images\sprites\enji\enji_angried.png
 images\sprites\enji\enji_angry_siding.png
 images\sprites\enji\enji_angry_speaking.png
@@ -180,6 +233,12 @@ images\sprites\key\key_usual.png
 images\sprites\key\key_usual_smiles.png
 images\sprites\key\key_usual_speaking.png
 images\sprites\key\key_usual_worried.png
+images\sprites\key_upscayled\key_speaking_kindly.png
+images\sprites\key_upscayled\key_usual.png
+images\sprites\key_upscayled\key_usual_smiles.png
+images\sprites\key_upscayled\key_usual_speaking.png
+images\sprites\key_upscayled\key_usual_worried.png
+images\sprites\main_character\side main_character.png
 images\sprites\natali\natali_concerned.png
 images\sprites\natali\natali_concerned_v2.png
 images\sprites\natali\natali_smiling.png
@@ -201,18 +260,13 @@ images\sprites\sae\sae_confused_speaking.png
 images\sprites\sae\sae_unf_badly_surprised.png
 images\sprites\sae\sae_unf_confused.png
 images\sprites\sae\sae_unf_confused_speaking.png
-music\CoolRide.mp3
-music\CorporationMotivation.mp3
-music\DeepSpace.mp3
-music\Different.mp3
-music\Drifting2.mp3
-music\GoodVibes.mp3
-music\Interconnected.mp3
-music\November.mp3
-music\Solace.mp3
-music\The_Lounge.mp3
-music\Whales.mp3
+images\sprites\speaker\side speaker.png
+saves\1-1-LT1.save
+saves\1-4-LT1.save
 saves\10-1-LT1.save
+saves\10-2-LT1.save
+saves\10-3-LT1.save
+saves\10-4-LT1.save
 saves\_reload-2-LT1.save
 saves\auto-1-LT1.save
 saves\auto-10-LT1.save
@@ -226,23 +280,82 @@ saves\auto-8-LT1.save
 saves\auto-9-LT1.save
 saves\navigation.json
 saves\persistent
+saves\quick-1-LT1.save
+saves\quick-10-LT1.save
+saves\quick-2-LT1.save
+saves\quick-3-LT1.save
+saves\quick-4-LT1.save
+saves\quick-5-LT1.save
+saves\quick-6-LT1.save
+saves\quick-7-LT1.save
+saves\quick-8-LT1.save
+saves\quick-9-LT1.save
+scripts\chapter_1\start.rpy
+scripts\chapter_1\start.rpyc
+scripts\chapter_1\district\follow_enji.rpy
+scripts\chapter_1\district\follow_enji.rpyc
+scripts\chapter_1\district\start.rpy
+scripts\chapter_1\district\start.rpyc
+scripts\chapter_1\hotel\start.rpy
+scripts\chapter_1\hotel\start.rpyc
+scripts\chapter_1\phil_home\return.rpy
+scripts\chapter_1\phil_home\return.rpyc
+scripts\chapter_1\phil_home\start.rpy
+scripts\chapter_1\phil_home\start.rpyc
 scripts\config\audio.rpy
 scripts\config\audio.rpyc
 scripts\config\characters.rpy
 scripts\config\characters.rpyc
-scripts\prologue\prologue_city.rpy
-scripts\prologue\prologue_city.rpyc
-scripts\prologue\prologue_home.rpy
-scripts\prologue\prologue_home.rpyc
-scripts\prologue\prologue_office.rpy
-scripts\prologue\prologue_office.rpyc
-scripts\prologue\prologue_story_wall.rpy
-scripts\prologue\prologue_story_wall.rpyc
-scripts\prologue\prologue_streets.rpy
-scripts\prologue\prologue_streets.rpyc
-scripts\prologue\prologue_train.rpy
-scripts\prologue\prologue_train.rpyc
-tl\start.rpy
-tl\start.rpyc
+scripts\config\images.rpy
+scripts\config\images.rpyc
+scripts\config\screens.rpy
+scripts\config\screens.rpyc
+scripts\prologue\city.rpy
+scripts\prologue\city.rpyc
+scripts\prologue\home.rpy
+scripts\prologue\home.rpyc
+scripts\prologue\start.rpy
+scripts\prologue\start.rpyc
+scripts\prologue\story_wall.rpy
+scripts\prologue\story_wall.rpyc
+scripts\prologue\streets.rpy
+scripts\prologue\streets.rpyc
+scripts\prologue\train.rpy
+scripts\prologue\train.rpyc
+scripts\prologue\office\office.rpy
+scripts\prologue\office\office.rpyc
+scripts\prologue\office\start_working.rpy
+scripts\prologue\office\start_working.rpyc
+scripts\prologue\office\retard\cafe.rpy
+scripts\prologue\office\retard\cafe.rpyc
+scripts\prologue\office\retard\return_office.rpy
+scripts\prologue\office\retard\return_office.rpyc
+scripts\prologue\office\work\hardwork.rpy
+scripts\prologue\office\work\hardwork.rpyc
+scripts\prologue\office\workday_ending\endday.rpy
+scripts\prologue\office\workday_ending\endday.rpyc
+scripts\prologue\office\workday_ending\keyoffice\visit_key.rpy
+scripts\prologue\office\workday_ending\keyoffice\visit_key.rpyc
+scripts\prologue\office\workday_ending\roof\roof.rpy
+scripts\prologue\office\workday_ending\roof\roof.rpyc
+scripts\prologue\office\workday_ending\roof\roof_false.rpy
+scripts\prologue\office\workday_ending\roof\roof_false.rpyc
+scripts\prologue\office\workday_ending\roof\roof_true.rpy
+scripts\prologue\office\workday_ending\roof\roof_true.rpyc
+scripts\startup\splashscreen.rpy
+scripts\startup\splashscreen.rpyc
+static\fonts\DolomanPavljenko.otf
+static\fonts\Eras_Medium_ITC.ttf
+static\fonts\Old-Soviet.otf
+tl\dissovles.rpy
+tl\dissovles.rpyc
+tl\japanese\ActionEditor.rpy
+tl\japanese\ActionEditor.rpyc
+tl\japanese\ActionEditor_screens.rpy
+tl\japanese\ActionEditor_screens.rpyc
+tl\japanese\image_viewer.rpy
+tl\japanese\image_viewer.rpyc
+tl\japanese\sound_viewer.rpy
+tl\japanese\sound_viewer.rpyc
 tl\None\common.rpym
 tl\None\common.rpymc

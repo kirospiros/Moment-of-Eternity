@@ -2,9 +2,7 @@ label prologue_city_train_station:
     # Пролог: Утро - Город - Станция
     # Prologue: Morning - City - Station.
 
-    scene bg_city_train_station
-    with slowdissolve
-    pause 0.3
+    scene bg station city v1 with slowdissolve
 
     "Наконец я прибыл в FYTLu#324."
     "Вьезжая в город, поезд уже нигде не останавливался и помчался к центральной станции, петляя по всяким тоннелям и мостам."
@@ -21,9 +19,7 @@ label prologue_city_train_station:
 
 label prologue_city_main_station:
 
-    scene bg_city_main_station
-    with slowdissolve
-    pause 0.2
+    scene bg station city v2 with slowdissolve
 
     "Я вышел из вагона и какое-то время просто рассеяно смотрел по сторонам, думая, как мне отсюда добраться в центр."
     "Не знаю точно, сколько я стоял, но через небольшой промежуток времени поезд отбыл."
@@ -34,9 +30,7 @@ label prologue_city_main_station:
 
 label prologue_city_main_station_norm:
 
-    scene bg_city_main_station_norm
-    with fastdissolve
-    pause 0.1
+    scene bg station city v3 with fastdissolve
 
     show key_usual at center
 
@@ -147,7 +141,7 @@ label prologue_city_main_station_left:
     # TODO: <НУЖНО 2 CG: 1 - УЛИЦА, ПО КОТОРОЙ ИДУТ ПЕРСОНАЖИ, 2 - ВИД С ОКНА МАШИНЫ>
     # TODO: Пролог: Утро - Город - Поездка в офис | Prologue: Morning - City - Going to the office.
 
-    scene bg_city_streets with averagedissolve
+    scene bg street city v1 with averagedissolve
 
     play music coolride fadeout 3
 

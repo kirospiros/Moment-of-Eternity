@@ -117,7 +117,7 @@ screen say(who, what):
     # Часть кода закомментирована, чтобы определять данные параметры индивидуально
     # для каждого side изображения
     if not renpy.variant("small"):
-        add SideImage() # xalign 0.0 yalign 1.0
+        add SideImage() xalign 0.0 yalign 1.0
 
 
 ## Делает namebox доступным для стилизации через объект Character.

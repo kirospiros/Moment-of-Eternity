@@ -68,7 +68,7 @@ label prologue_bg_night_room_light_on:
     "Через пару секунд ко мне вернулось нормальное зрение, которое я сам же подвергнул \"неприятности\", включив свет посреди ночи."
     "Не успели  зрачки привыкнуть к свету, как я сразу посмотрел на мирно тикающие часы, что висели над дверью."
 
-    me main_character " \"Почти пол шестого?!\" "
+    me " \"Почти пол шестого?!\" "
 
     "Для нормальных людей это время было ещё глубокой ночью, но для меня, живущего в уголке вселенной, это означало, что я мог опоздать на работу!"
     
@@ -87,8 +87,7 @@ label prologue_bathroom_1:
     # Пролог: Ванная.
     # Prologue: Bathroom.
 
-    scene bg_bathroom_1
-    with slowdissolve
+    scene bg mc_home bathroom with slowdissolve
     pause 0.5
     play music solace fadeout 2
     
@@ -107,15 +106,13 @@ label prologue_living_room_1:
     # Пролог: гостиная.
     #Prologue: living room.
 
-    scene bg_nothing
-    with slowdissolve
+    scene black with slowdissolve
 
     "Я вышел из ванной, что была напротив моей комнаты,"
     "спустился на первый этаж дома"
     "и поторопился в гостиную."
 
-    scene bg_living_room_1
-    with slowdissolve
+    scene bg mc_home living_room light_off with slowdissolve
     pause 0.5
 
     "..."
@@ -164,8 +161,8 @@ label prologue_living_room_1:
     
     "Я слегка подавился чаем от своих мыслей."
     "Когда я жил у родителей, мне всегда казалось, что я - комнатный цветочек, который только тронь  - и он завянет."
-    "Поэтому, когда мне исполнилось 20 лет, я твердо решил:"
-    "переехать."
+    "Поэтому, когда мне исполнилось 20 лет, я твердо решил - "
+    extend "переехать."
     "И чем скорее - тем лучше."
     "Но тогда я еще не знал, с какими трудностями мне придётся столкнуться."
     "..."
@@ -179,8 +176,7 @@ label prologue_room_dawn_2_light_off:
     # Пролог: моя комната - Утро.
     # rologue: my room - Morning.
 
-    scene bg_room_dawn_2_light_off
-    with slowdissolve
+    scene bg mc_home night_room sunrise with slowdissolve
     pause 1.0
 
     "Когда я взглянул на часы в своей комнате, было почти шесть."
@@ -209,8 +205,7 @@ label prologue_my_hall_dawn:
     # Пролог: моя комната - Утро.
     # Prologue: my room - Morning.
 
-    scene bg_my_hall_dawn
-    with slowdissolve
+    scene bg mc_home hall sunrise with slowdissolve
     pause 1.0
 
     "И вот я уже стою в холле..."
@@ -223,4 +218,4 @@ label prologue_my_hall_dawn:
     "Но я направился прямо к двери, что выведет меня в мир."
     "Мир, где я не увижу ничего нового."
 
-    jump prologue_street_dawn
+    jump prologue_street_sunrise

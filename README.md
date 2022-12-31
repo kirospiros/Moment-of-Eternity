@@ -1,10 +1,10 @@
 # Moment-of-Eterniry
 
 Ссылка для скачивания .exe приложения под Windows:  
-[Download](https://disk.yandex.ru/d/YFG8g5Rx18JlzA)  
+[Download](https://disk.yandex.ru/d/av_QAxJVb35yNA)  
 
 Ссылка на медиа файлы в случае необходимости:  
-[Media files](https://disk.yandex.ru/d/rOes6f58jpRrWg)  
+[Media files](https://disk.yandex.ru/d/0gNWAd49IWLC2w)  
 
 ## Клонирование репозитория
 В репозитории включено Git LFS, поэтому в случае отсутствия LFS у вас будет отсутствовать доступ к этим файлам.  
@@ -23,11 +23,12 @@
 [Дискорд канал](https://discord.gg/YbeeBtkxBA)  
 tg: @Kadel_007  
 
-## Изменения от 30.12.2022
+## Изменения от 31.12.2022
 1. Добавлен [*ActionEditor*](https://github.com/kyouryuukunn/renpy-ActionEditor3) для удобства настройки в самой игре.  
 [Подробнее об использовании](https://www.youtube.com/watch?v=KoYXzREFx4A)  
-2. В *screens.rpy* модифицирована строчка *if not renpy.variant("small"):* по причинам объясненным [здесь](https://www.twoandahalfstudios.com/2020/11/visual-novel-tips-and-tricks-with-gabmag-2).  
-3.
+2. Для главного героя добавлен *side image*;  
+3. Все имеющиеся на текущий момент изображения фонов разбиты по папкам и определены в *config/images.rpy*.  
+
 ## Изменения от 30.12.2022
 1. Черное изображение *bg_nothing*, заменено на встроенное *black*;  
 2. Переход в пролог и новую главу заменен с изображения на *screen textmiddle(text)*;  

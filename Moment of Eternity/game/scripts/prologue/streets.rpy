@@ -1,9 +1,8 @@
-label prologue_street_dawn:
+label prologue_street_sunrise:
     # Пролог: Утро - Улицы.
     # Prologue: Morning - Streets.
 
-    scene bg_sky_dawn
-    with slowdissolve
+    scene bg sky sunrise with slowdissolve
     pause 0.7
     play music november fadeout 2
 
@@ -11,8 +10,7 @@ label prologue_street_dawn:
     "Набежавшие тучи заслонили утренний свет."
     "От дома я свернул налево и прошёл несколько жилых кварталов."
 
-    scene bg_street_dawn
-    with slowdissolve
+    scene bg street v1 sunrise with slowdissolve
     pause 0.7
 
     "Вскоре я вышел на небольшой перекрёсток."
@@ -25,24 +23,22 @@ label prologue_street_dawn:
     "..."
     "Пройдя несколько похожих друг на друга улиц, я свернул в следующий спальный район."
 
-    jump prologue_street_1_dawn
+    jump prologue_street_1_sunrise
 
 
-label prologue_street_1_dawn:
+label prologue_street_1_sunrise:
 
-    scene bg_street_1_dawn
-    with slowdissolve
+    scene bg street v2 sunrise with slowdissolve
     pause 1
 
     "..."
 
-    jump prologue_street_2_dawn
+    jump prologue_street_2_sunrise
 
 
-label prologue_street_2_dawn:
+label prologue_street_2_sunrise:
 
-    scene bg_street_2_dawn
-    with slowdissolve
+    scene bg street v3 sunrise with slowdissolve
     pause 1
 
     "Оставив позади одну улицу, я свернул налево."
@@ -76,13 +72,12 @@ label prologue_street_2_dawn:
     "Центральная улица была довольно широкой и длинной."
     "Мне нужно было ещё немного попотеть, чтобы добраться до намеченного перекрёстка."
 
-    jump prologue_street_3_dawn
+    jump prologue_street_3_sunrise
 
 
-label prologue_street_3_dawn:
+label prologue_street_3_sunrise:
 
-    scene bg_street_3_dawn
-    with slowdissolve
+    scene bg street v4 sunrise with slowdissolve
     pause 1
 
     "..."
@@ -111,13 +106,12 @@ label prologue_street_3_dawn:
     "Мне нечему гордиться и радоваться."
     "А мои детские дни, когда я беззаботно играл с дядей и тётой, давно позади..."
 
-    jump prologue_park_dawn
+    jump prologue_park_sunrise
 
 
-label prologue_park_dawn:
+label prologue_park_sunrise:
 
-    scene bg_park_dawn
-    with slowdissolve
+    scene bg park sunrise with slowdissolve
     pause 0.8
 
     "Фух..."
@@ -139,8 +133,7 @@ label prologue_park_dawn:
 
 label prologue_station:
 
-    scene bg_station
-    with slowdissolve
+    scene bg station sunrise with slowdissolve
     pause 0.4
 
     "!"
@@ -148,9 +141,6 @@ label prologue_station:
     "И судя по тому, что я вижу, он вот-вот начнёт движение."
     "Я кинулся в ближайший вагон."
 
-    scene bg_station
-    with slowdissolve
-    pause 0.5
     stop music fadeout 3
 
     jump prologue_train_hall

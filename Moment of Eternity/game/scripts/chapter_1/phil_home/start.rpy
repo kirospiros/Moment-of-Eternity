@@ -3,7 +3,7 @@ label phil_home_start:
     # Глава 1: Утро. Дом Фила. Прийти в себя
     # Chapter 1: Morning. Phil's House.
 
-    scene bg_nothing with fade
+    scene black with fade
 
     $ renpy.pause(1.5)
 
@@ -28,7 +28,7 @@ label phil_home_start:
 
 label chapter_1_awakening:
 
-    scene bg_phil_room_blured2 with fade
+    scene bg phil_home room blured v2 with fade
 
     $ renpy.pause(1.5)
 
@@ -37,13 +37,13 @@ label chapter_1_awakening:
     "Всё что я мог сделать - это простонать, в ожидании того, когда я начну ощущать хотя бы признаки нормального состояния."
     "Я закрыл глаза."
 
-    scene bg_phil_room_blured1 with fade
+    scene bg phil_home room blured v1 with fade
 
     $ renpy.pause(1.5)
 
     "И открыл их снова."
 
-    scene bg_phil_room with fade
+    scene bg phil_home room with fade
 
     $ renpy.pause(0.5)
 

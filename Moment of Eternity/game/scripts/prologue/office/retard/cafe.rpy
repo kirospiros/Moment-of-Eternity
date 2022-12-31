@@ -13,7 +13,7 @@ label prologue_office_retard:
 
 label prologue_cafe:
 
-    scene work_cafe_evening with fade
+    scene bg cafe evening with fade
 
     "..."
     "Незаметно для себя я оказался в знакомом месте."

@@ -3,9 +3,7 @@ label prologue_train_hall:
     # Пролог: Утро - Поездка в город.
     # Prologue: Morning - The way to city.
 
-    scene bg_train_hall
-    with slowdissolve
-    pause 0.5
+    scene bg train v1 hall with slowdissolve
 
     "..."
     "Прошло больше получаса с момента моей посадки."
@@ -74,9 +72,7 @@ label prologue_train_hall:
 
 label prologue_train_nothing:
 
-    scene bg_nothing
-    with slowdissolve
-    pause 0.5
+    scene black with slowdissolve
     play music whales fadeout 3
 
     "..."
@@ -98,9 +94,7 @@ label prologue_train_nothing:
 
 label prologue_burned_city:
 
-    scene bg_burned_city
-    with slowdissolve
-    pause 0.7
+    scene bg memories burned_city with slowdissolve
 
     "Она была не такой, как предполагали многие."
     "Война не уничтожила человечество, но имела серьёзные последствия."
@@ -129,9 +123,7 @@ label prologue_burned_city:
 
 label prologue_after_burned_city:
 
-    scene bg_nothing
-    with slowdissolve
-    pause 0.5
+    scene black with slowdissolve
 
     "Я повесил голову, уставился в пол вагона и закрыл глаза."
 
@@ -175,6 +167,8 @@ label prologue_after_burned_city:
 
 
 label prologue_train_tv_speech:
+
+    scene bg train v2 hall with slowdissolve
 
     speaker "Сегодня поступило официальное подтверждение на разглашение информации от компании XiJ, и было объявлено о том, что подготовка к невиданному событию идёт полным ходом."
     speaker "По самым последним прогнозам, кластер комет под временным названием PYU-336 приблизится к планете всего через несколько месяцев."

@@ -7,7 +7,7 @@ label chapter_1_return_home:
     "К тому же, наверняка уйдет еще некоторое время, чтобы найти дорогу обратно."
     "А бегать за кем-то по всему району мне особо-то и хочется."
 
-    scene bg_phil_room_evening with averagedissolve
+    scene bg phil_home room evening with averagedissolve
 
     pause(0.5)
 
@@ -51,7 +51,7 @@ label chapter_1_return_home:
 
     hide phil_casual_speaking with fastdissolve
 
-    scene bg_phil_room_evening with fade
+    scene bg phil_home room evening with fade
 
     pause(0.5)
 
@@ -69,7 +69,7 @@ label chapter_1_watching_tv:
     "На самом деле, Фил любезно предоставил выбор мне, но я отказался, намекнув, что переварю что угодно."
     "Как вспомню себя беззаботного несколько лет назад, аж больно становится..."
 
-    scene bg_nothing with slowdissolve
+    scene black with slowdissolve
 
     "Не считая выходных, у меня почти не было свободного времени, и, казалось, я должен использовать его для себя без остатка."
     "Наслаждаться каждой секундой..."
@@ -80,7 +80,7 @@ label chapter_1_watching_tv:
     "В итоге, на выходных я занимаюсь чем попало, под настроение, а стиль моей жизни не сильно отличается от образа бытия ленивца."
     "Добро пожаловать во взрослую жизнь..?"
 
-    scene bg_phil_room_evening with fastdissolve
+    scene bg phil_home room evening with fastdissolve
 
     show phil_casual with fastdissolve
 
@@ -127,7 +127,7 @@ label chapter_1_watching_tv:
     "Однако в душе я начал понимать, что за его легкомысленным мальчишеством стоит собственная гордость и упрямство в отношении общества."
     "Возможно, это как раз то, на что вскольз также упоминала Энджи."
 
-    scene bg_nothing with fade
+    scene black with fade
 
     "Вскоре, после фильма, мы легли спать молча, а наши сердца были слегка отягощены."
     "На ночь мы договорились посмотреть нейтральный фильм, насколько это было возможно, а в итоге получили меланхолию."

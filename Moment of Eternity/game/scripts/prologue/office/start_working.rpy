@@ -3,7 +3,7 @@ label prologue_office_start_working:
     # Пролог: Утро - Город - Безделье и Работа 2
     # Prologue: Morning - Lounging and Working 2
 
-    scene bg_mh_office with slowdissolve
+    scene bg office main_character workroom v1 with slowdissolve
 
     "Какое-то время я сидел в своем кабинете."
     "Было немного пыльно, повсюду лежали коробки."
@@ -42,7 +42,7 @@ label prologue_office_start_working:
     "..."
     "Отогнав все лишние мысли прочь, я тщательнее погрузился в чтение внушительной кипы бумаг с метаданными, связанных с моим текущим заданием..."
 
-    scene bg_mh_office with fade
+    scene bg office main_character workroom v1 with fade
 
     jump prologue_office_tired
 

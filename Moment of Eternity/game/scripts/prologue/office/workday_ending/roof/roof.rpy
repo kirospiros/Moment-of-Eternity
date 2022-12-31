@@ -6,7 +6,7 @@ label prologue_went_to_roof:
     "Желание вновь оказаться на крыше оказалось сильнее."
     "Я сел в лифт и поехал на верхний этаж."
 
-    scene bg_outdoor_stairs with fade
+    scene bg office stairs with fade
 
     "Меня встретила та же лестница и похожий узкий коридор..."
     "Дело в том, что лифт не шел непосредственно на крышу."
@@ -22,7 +22,7 @@ label prologue_went_to_roof:
     "Внезапно услышал нежданный звук."
     "И как только я открыл дверь..."
 
-    scene bg_rooftop_dusk with slowdissolve
+    scene bg office rooftop sunset with slowdissolve
 
     jump prologue_met_natali
 
@@ -54,12 +54,12 @@ label prologue_met_natali:
     "Я какое-то время торчал на месте и лишь смотрел на происходящее через левое плечо."
     "Хмм...."
 
-    scene bg_outdoor_stairs_gray with fade
+    scene bg office stairs gray with fade
 
     "\"Поэтому любой мог спокойно там проводить время.\""
     "\"Но самым интересным было то, что кроме меня этой возможностью никто не пользовался.\""
 
-    scene bg_rooftop_dusk with fade
+    scene bg office rooftop sunset with fade
 
     jump prologue_roof_met_enji
 
@@ -124,7 +124,7 @@ label prologue_roof_met_enji:
     "Чтобы меня не заклеймили извращенцем, я больше не смотрел в ее сторону."
     "Опершись на перила забора, что окружал всю крышу многоэтажки, я закрыл глаза и решил насладиться свободой еще какое-то время."
 
-    scene bg_nothing with normdissolve
+    scene black with normdissolve
 
     "..."
     "..."
@@ -137,7 +137,7 @@ label prologue_office_roof_start_dialogue:
 
     enji "Скажи..."
 
-    scene bg_rooftop_dusk with slowdissolve
+    scene bg office rooftop sunset with slowdissolve
 
     show enji_speaking_down with averagedissolve
 

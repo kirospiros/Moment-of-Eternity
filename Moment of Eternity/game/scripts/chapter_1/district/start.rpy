@@ -3,8 +3,7 @@ label chapter_1_district_the_walk:
     # Глава 1: День - Прогулка
     # Chapter 1: Day - The Walk
 
-    scene bg_sleep_district_morning with slowdissolve
-    pause(2.0)
+    scene bg district morning with slowdissolve
 
     "Какое прекрасное утро!"
     "Я решил избавиться от похмелья благодатной прогулкой."
@@ -29,7 +28,7 @@ label chapter_1_district_the_walk:
     # Пояснение об использовании тегов: https://www.renpy.org/doc/html/text.html
     "Или из-за того, что похмелье еще не прошло, я был более {w=0.8}...азартным?"
 
-    scene bg_vending_machine with slowdissolve
+    scene bg vending_machine with slowdissolve
     pause(1.5)
 
     me "Фух..."
@@ -42,14 +41,14 @@ label chapter_1_district_the_walk:
     "Поэтому пришлось выбирать более удобное место дальше по списку... Внутри также не было никаких специальных мест для сидения."
     "..."
 
-    scene bg_nothing with fade
+    scene black with fade
     pause(0.5)
 
     "Редкий ветерок, иногда посещавший этот двор, слегка трепетал мои волосы."
     "Вдалеке я слышал легкий шум улиц спального района."
     "Я посидел в таком состоянии несколько минут, и, открывая глаза,"
 
-    scene bg_vending_machine with slowdissolve
+    scene bg vending_machine with slowdissolve
     pause(0.5)
 
     "заметил, что похмелье, благодаря проведенному времени на улице, немного выветрилось."
@@ -191,7 +190,7 @@ label chapter_1_soda_drinking:
 
     "И через пару минут мои надежды оправдались: я потягивал вкусную газировочку, продолжая свою прогулку по улицам."
 
-    scene bg_sleep_district_day with averagedissolve
+    scene bg district day with averagedissolve
     pause(0.5)
 
     "Тем не менее, газировка не могла улучшить моё дурное настроение."
@@ -224,7 +223,7 @@ label chapter_1_district_enji_meeting:
     hide enji_siding with slowdissolve
     pause(0.3)
 
-    scene bg_sleep_district_day with fade
+    scene bg district day with fade
     pause(0.5)
 
     "Это ведь была Энджи? На пару секунд мне привиделась знакомая фигура, которая скрылась за придорожной клумбой и вскоре исчезла за углом другой улицы."

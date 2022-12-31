@@ -3,7 +3,7 @@ label prologue_went_to_key:
     "..."
     "Я зевнул, завернул за угол и побрел к лифту."
 
-    scene bg_nothing with fade
+    scene black with fade
     pause(0.7)
 
     jump prologue_office_report_key
@@ -11,7 +11,7 @@ label prologue_went_to_key:
 
 label prologue_office_report_key:
 
-    scene bg_head_office_sunset with averagedissolve
+    scene bg office head_office sunset with averagedissolve
 
     play music lounge fadeout 4
 
@@ -302,7 +302,7 @@ label prologue_office_key_end_conversation:
     "Он больше ничего не сказал и покинул кабинет."
     "Я последовал за ним."
 
-    scene bg_nothing with fade
+    scene black with fade
 
     "Таким образом, ко мне вернулась шумная городская жизнь."
     "Казалось бы, когда я уже от неё отвык."

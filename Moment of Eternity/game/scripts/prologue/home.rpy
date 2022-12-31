@@ -40,7 +40,7 @@ label prologue_bg_night_room_light_off:
     "Когда холодный воздух чуть взбодрил мой мозг,"
     "Я поднялся и обвел взглядом свою комнату..."
 
-    scene bg_night_room_light_off_1 with slowdissolve
+    scene bg mc_home night_room light_off with slowdissolve
 
     "..."
     "Сколько я себя помню, здесь мало что изменилось."
@@ -62,14 +62,13 @@ label prologue_bg_night_room_light_off:
 
 label prologue_bg_night_room_light_on:
 
-    scene bg_night_room_light_on
-    with superfastdissolve
+    scene bg mc_home night_room light_on with superfastdissolve
 
     "И яркий свет залил мои глаза..."
     "Через пару секунд ко мне вернулось нормальное зрение, которое я сам же подвергнул \"неприятности\", включив свет посреди ночи."
     "Не успели  зрачки привыкнуть к свету, как я сразу посмотрел на мирно тикающие часы, что висели над дверью."
 
-    me " \"Почти пол шестого?!\" "
+    me main_character " \"Почти пол шестого?!\" "
 
     "Для нормальных людей это время было ещё глубокой ночью, но для меня, живущего в уголке вселенной, это означало, что я мог опоздать на работу!"
     

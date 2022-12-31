@@ -1,5 +1,9 @@
 ##Определяем персонажей через подобие классов.
-image main_character = "sprites/main_character/main_character.png"
+# image main_character = "sprites/main_character/main_character.png"
+image side main_character = Transform(
+    "sprites/main_character/side main_character.png", yalign = 1.0, xalign = -0.1
+)
+
 define me = Character(
     _("Я"), image="main_character", color="#2E8B57"
 )

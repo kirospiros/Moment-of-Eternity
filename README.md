@@ -24,6 +24,11 @@
 tg: @Kadel_007  
 
 ## Изменения от 30.12.2022
+1. Добавлен [*ActionEditor*](https://github.com/kyouryuukunn/renpy-ActionEditor3) для удобства настройки в самой игре.  
+[Подробнее об использовании](https://www.youtube.com/watch?v=KoYXzREFx4A)  
+2. В *screens.rpy* модифицирована строчка *if not renpy.variant("small"):* по причинам объясненным [здесь](https://www.twoandahalfstudios.com/2020/11/visual-novel-tips-and-tricks-with-gabmag-2).  
+3.
+## Изменения от 30.12.2022
 1. Черное изображение *bg_nothing*, заменено на встроенное *black*;  
 2. Переход в пролог и новую главу заменен с изображения на *screen textmiddle(text)*;  
 3. Добавлен файл *clear_rpyc.bat*, который рекурсивно удаляет все временные файлы RenPy;  

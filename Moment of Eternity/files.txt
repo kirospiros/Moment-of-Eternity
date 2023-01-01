@@ -122,42 +122,8 @@ gui\slider\vertical_hover_bar.png
 gui\slider\vertical_hover_thumb.png
 gui\slider\vertical_idle_bar.png
 gui\slider\vertical_idle_thumb.png
-images\bg\author.jpg
-images\bg\bg_cafe.jpg
-images\bg\bg_field.jpg
-images\bg\bg_head_office_sunset.jpg
-images\bg\bg_mh_cabinet_evening.jpg
-images\bg\bg_mh_office.jpg
-images\bg\bg_my_hall_dusk.jpg
-images\bg\bg_my_hall_early_morning.jpg
-images\bg\bg_night_room_light_off_2.jpg
-images\bg\bg_nothing.jpg
-images\bg\bg_outdoor_stairs.jpg
-images\bg\bg_outdoor_stairs_gray.jpg
-images\bg\bg_phil_room.jpg
-images\bg\bg_phil_room_blured1.jpg
-images\bg\bg_phil_room_blured2.jpg
-images\bg\bg_phil_room_evening.jpg
-images\bg\bg_phil_room_grey.jpg
-images\bg\bg_phil_room_white.jpg
-images\bg\bg_random_city.jpg
-images\bg\bg_rooftop_dusk.jpg
-images\bg\bg_sleep_district_day.jpg
-images\bg\bg_sleep_district_evening.jpg
-images\bg\bg_sleep_district_morning.jpg
-images\bg\bg_vending_machine.jpg
-images\bg\bg_white.jpg
-images\bg\credits.jpg
-images\bg\for_non_commercial_use.jpg
-images\bg\image_sources.jpg
-images\bg\m_o_e_.jpg
-images\bg\music_1.jpg
-images\bg\music_2.jpg
-images\bg\music_3.jpg
-images\bg\music_4.jpg
-images\bg\solo_evade_black.jpg
-images\bg\special_thanks.jpg
-images\bg\work_cafe_evening.jpg
+images\bg\cafe\chapter1.png
+images\bg\cafe\evening.png
 images\bg\mc_home\bathroom.png
 images\bg\mc_home\hall sunrise.png
 images\bg\mc_home\living_room light_off.png
@@ -169,7 +135,16 @@ images\bg\memories\burned_city.png
 images\bg\memories\constructions.png
 images\bg\office\halls labs v1.png
 images\bg\office\halls labs v2.png
+images\bg\office\head_office sunset.png
 images\bg\office\main.png
+images\bg\office\main_character workroom evening.png
+images\bg\office\main_character workroom v1.png
+images\bg\office\rooftop sunset.png
+images\bg\office\stairs gray.png
+images\bg\office\stairs.png
+images\bg\outdoor\district day.png
+images\bg\outdoor\district evening.png
+images\bg\outdoor\district morning.png
 images\bg\outdoor\park sunrise.png
 images\bg\outdoor\sky sunrise.png
 images\bg\outdoor\street city v1.png
@@ -177,42 +152,17 @@ images\bg\outdoor\street v1 sunrise.png
 images\bg\outdoor\street v2 sunrise.png
 images\bg\outdoor\street v3 sunrise.png
 images\bg\outdoor\street v4 sunrise.png
+images\bg\outdoor\vending_machine.png
+images\bg\phil_home\room blured v1.png
+images\bg\phil_home\room blured v2.png
+images\bg\phil_home\room evening.png
+images\bg\phil_home\room.png
 images\bg\station\city v1.png
 images\bg\station\city v2.png
 images\bg\station\city v3.png
 images\bg\station\sunrise.png
 images\bg\station\train v1 hall.png
 images\bg\station\train v2 hall.png
-images\removed\bg\bg_bathroom_1.jpg
-images\removed\bg\bg_burned_city.jpg
-images\removed\bg\bg_chapter1_ru.jpg
-images\removed\bg\bg_city_main_station.jpg
-images\removed\bg\bg_city_main_station_norm.jpg
-images\removed\bg\bg_city_streets.jpg
-images\removed\bg\bg_city_train_station.jpg
-images\removed\bg\bg_constructions.jpg
-images\removed\bg\bg_full_solo_evade.jpg
-images\removed\bg\bg_hall_labs_1.jpg
-images\removed\bg\bg_hall_labs_2.jpg
-images\removed\bg\bg_hall_labs_cold.jpg
-images\removed\bg\bg_living_room_1.jpg
-images\removed\bg\bg_living_room_2.jpg
-images\removed\bg\bg_main_office.jpg
-images\removed\bg\bg_my_hall_dawn.jpg
-images\removed\bg\bg_night_room_light_on.jpg
-images\removed\bg\bg_park_dawn.jpg
-images\removed\bg\bg_prologue_ru.jpg
-images\removed\bg\bg_room_dawn_1_light_off.jpg
-images\removed\bg\bg_room_dawn_2_light_off.jpg
-images\removed\bg\bg_room_dawn_3_light_off.jpg
-images\removed\bg\bg_sky_dawn.jpg
-images\removed\bg\bg_station.jpg
-images\removed\bg\bg_street_1_dawn.jpg
-images\removed\bg\bg_street_2_dawn.jpg
-images\removed\bg\bg_street_3_dawn.jpg
-images\removed\bg\bg_street_dawn.jpg
-images\removed\bg\night_room light_off.jpg
-images\removed\bg\train hall.jpg
 images\sprites\enji\enji_angried.png
 images\sprites\enji\enji_angry_siding.png
 images\sprites\enji\enji_angry_speaking.png
@@ -228,16 +178,11 @@ images\sprites\enji\enji_speaking_down.png
 images\sprites\enji\enji_thinking.png
 images\sprites\enji\enji_upset.png
 images\sprites\enji\enji_usual.png
-images\sprites\key\key_speaking_kindly.png
-images\sprites\key\key_usual.png
-images\sprites\key\key_usual_smiles.png
-images\sprites\key\key_usual_speaking.png
-images\sprites\key\key_usual_worried.png
-images\sprites\key_upscayled\key_speaking_kindly.png
-images\sprites\key_upscayled\key_usual.png
-images\sprites\key_upscayled\key_usual_smiles.png
-images\sprites\key_upscayled\key_usual_speaking.png
-images\sprites\key_upscayled\key_usual_worried.png
+images\sprites\key\key usual smiles.png
+images\sprites\key\key usual speaking kindly.png
+images\sprites\key\key usual speaking.png
+images\sprites\key\key usual worried.png
+images\sprites\key\key usual.png
 images\sprites\main_character\side main_character.png
 images\sprites\natali\natali_concerned.png
 images\sprites\natali\natali_concerned_v2.png
@@ -260,7 +205,80 @@ images\sprites\sae\sae_confused_speaking.png
 images\sprites\sae\sae_unf_badly_surprised.png
 images\sprites\sae\sae_unf_confused.png
 images\sprites\sae\sae_unf_confused_speaking.png
+images\sprites\speaker\pngwing.com.png
 images\sprites\speaker\side speaker.png
+images\sprites\unknown\side key.png
+images\unused\bg\author.jpg
+images\unused\bg\bg_bathroom_1.jpg
+images\unused\bg\bg_burned_city.jpg
+images\unused\bg\bg_cafe.jpg
+images\unused\bg\bg_chapter1_ru.jpg
+images\unused\bg\bg_city_main_station.jpg
+images\unused\bg\bg_city_main_station_norm.jpg
+images\unused\bg\bg_city_streets.jpg
+images\unused\bg\bg_city_train_station.jpg
+images\unused\bg\bg_constructions.jpg
+images\unused\bg\bg_field.jpg
+images\unused\bg\bg_full_solo_evade.jpg
+images\unused\bg\bg_hall_labs_1.jpg
+images\unused\bg\bg_hall_labs_2.jpg
+images\unused\bg\bg_hall_labs_cold.jpg
+images\unused\bg\bg_head_office_sunset.jpg
+images\unused\bg\bg_living_room_1.jpg
+images\unused\bg\bg_living_room_2.jpg
+images\unused\bg\bg_main_office.jpg
+images\unused\bg\bg_mh_cabinet_evening.jpg
+images\unused\bg\bg_mh_office.jpg
+images\unused\bg\bg_my_hall_dawn.jpg
+images\unused\bg\bg_my_hall_dusk.jpg
+images\unused\bg\bg_my_hall_early_morning.jpg
+images\unused\bg\bg_night_room_light_off_2.jpg
+images\unused\bg\bg_night_room_light_on.jpg
+images\unused\bg\bg_nothing.jpg
+images\unused\bg\bg_outdoor_stairs.jpg
+images\unused\bg\bg_outdoor_stairs_gray.jpg
+images\unused\bg\bg_park_dawn.jpg
+images\unused\bg\bg_phil_room.jpg
+images\unused\bg\bg_phil_room_blured1.jpg
+images\unused\bg\bg_phil_room_blured2.jpg
+images\unused\bg\bg_phil_room_evening.jpg
+images\unused\bg\bg_phil_room_grey.jpg
+images\unused\bg\bg_phil_room_white.jpg
+images\unused\bg\bg_prologue_ru.jpg
+images\unused\bg\bg_random_city.jpg
+images\unused\bg\bg_rooftop_dusk.jpg
+images\unused\bg\bg_room_dawn_1_light_off.jpg
+images\unused\bg\bg_room_dawn_2_light_off.jpg
+images\unused\bg\bg_room_dawn_3_light_off.jpg
+images\unused\bg\bg_sky_dawn.jpg
+images\unused\bg\bg_sleep_district_day.jpg
+images\unused\bg\bg_sleep_district_evening.jpg
+images\unused\bg\bg_sleep_district_morning.jpg
+images\unused\bg\bg_station.jpg
+images\unused\bg\bg_street_1_dawn.jpg
+images\unused\bg\bg_street_2_dawn.jpg
+images\unused\bg\bg_street_3_dawn.jpg
+images\unused\bg\bg_street_dawn.jpg
+images\unused\bg\bg_vending_machine.jpg
+images\unused\bg\bg_white.jpg
+images\unused\bg\credits.jpg
+images\unused\bg\for_non_commercial_use.jpg
+images\unused\bg\image_sources.jpg
+images\unused\bg\m_o_e_.jpg
+images\unused\bg\music_1.jpg
+images\unused\bg\music_2.jpg
+images\unused\bg\music_3.jpg
+images\unused\bg\music_4.jpg
+images\unused\bg\night_room light_off.jpg
+images\unused\bg\solo_evade_black.jpg
+images\unused\bg\special_thanks.jpg
+images\unused\bg\train hall.jpg
+images\unused\bg\work_cafe_evening.jpg
+images\unused\sprites\key\key_speaking_kindly.png
+images\unused\sprites\key\key_usual.png
+images\unused\sprites\key\key_usual_smiles.png
+images\unused\sprites\key\key_usual_speaking.png
+images\unused\sprites\key\key_usual_worried.png
 saves\1-1-LT1.save
 saves\1-4-LT1.save
 saves\10-1-LT1.save
@@ -304,10 +322,10 @@ scripts\chapter_1\phil_home\start.rpy
 scripts\chapter_1\phil_home\start.rpyc
 scripts\config\audio.rpy
 scripts\config\audio.rpyc
+scripts\config\backgrounds.rpy
+scripts\config\backgrounds.rpyc
 scripts\config\characters.rpy
 scripts\config\characters.rpyc
-scripts\config\images.rpy
-scripts\config\images.rpyc
 scripts\config\screens.rpy
 scripts\config\screens.rpyc
 scripts\prologue\city.rpy

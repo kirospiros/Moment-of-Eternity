@@ -9,7 +9,8 @@ label prologue_office_work:
     "..."
     "..."
 
-    scene bg office main_character workroom evening with fade
+    scene bg office main_character workroom evening
+    with fade
 
     me "\"Что ж, сегодня я управился быстрее, чем ожидалось.\""
 

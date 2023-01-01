@@ -8,7 +8,9 @@ label chapter_1_follow_enji:
     "Останавливаться уже поздно, а необычное поведение Энджи всё еще кажется мне любопытным."
     "И спустя час..."
 
-    scene bg cafe chapter1 with slowdissolve
+    scene bg cafe chapter1
+    with slowdissolve
+
     pause(1.5)
 
     "{w=1}я оказался здесь..."
@@ -24,31 +26,32 @@ label chapter_1_follow_enji:
 
 label chapter_1_founded_by_enji:
 
-    show enji_speaking_down with averagedissolve
+    show enji speaking down
+    with averagedissolve
 
     enji "Однажды некий Шарль Талейран сказал, что кофе должен быть горячим как ад, черным как черт, чистым как ангел и сладким как любовь."
     enji "Классика жанра, если выразиться проще."
 
-    show enji_siding with averagedissolve
-    hide enji_speaking_down
+    show enji siding
+    with averagedissolve
 
     enji "..."
 
-    show enji_angry_speaking with fastdissolve
-    hide enji_siding
+    show enji speaking angry
+    with fastdissolve
 
     enji "Но боюсь, две последние аналогии я точно не могу применить ни к тебе, ни к сложившейся ситуации!"
     enji "Наоборот, сейчас на языке только и вертятся, что ад да чертики..."
 
-    show enji_siding with fastdissolve
-    hide enji_angry_speaking
+    show enji siding
+    with fastdissolve
 
     me "А я слышал, что кофе, как и коньяк, нельзя пить кружками..."
 
     "Я пытался как-то разбавить её настроение, вспомнив какую-то цитату из той же темы, но..."
 
-    show enji_thinking with averagedissolve
-    hide enji_siding
+    show enji thinking
+    with averagedissolve
 
     "Она просто сделала аккуратный глоток кофе, прикрыв глаза, явно пытаясь насладиться его вкусом в стой неловкой ситуации."
     "..."
@@ -58,7 +61,8 @@ label chapter_1_founded_by_enji:
 
 label chapter_1_cofee_conversation:
 
-    hide enji_thinking with slowdissolve
+    hide enji thinking
+    with slowdissolve
 
     "Мы уже какое-то время сидели в этом странном кафе."
     "Не то, что бы место было плохим. Напротив, тут витал смешанный аромат разнообразных кофе, а также приятный душок выпечки."
@@ -86,10 +90,13 @@ label chapter_1_cofee_conversation:
 
 label chapter_1_watching_key:
 
-    show key_usual with averagedissolve
+    show key usual
+    with averagedissolve
+
     pause(1.5)
 
-    hide key_usual with averagedissolve
+    hide key
+    with averagedissolve
 
     "Кей..."
     "Мы спрятались в таком углу, в котором Энджи могла наблюдать за столиком Кея и его спиной, в то же время оставаясь незамеченной."
@@ -105,31 +112,34 @@ label chapter_1_watching_key:
 
     "Вслух вздохнул я."
 
-    show enji_speaking with superfastdissolve
+    show enji speaking
+    with superfastdissolve
 
     enji "Это моя фраза. А вообще по большей части это твоя вина."
 
     "Вот тут я не мог согласиться."
 
-    show enji_usual with fastdissolve
-    hide enji_speaking
+    show enji usual
+    with fastdissolve
 
     me "О чем ты? Никогда бы не подумал, что Энджи окажется сталкершой."
 
-    show enji_angried with averagedissolve
-    hide enji_usual
+    show enji angry
+    with averagedissolve
 
     enji "Хмфф...То, что я делала, никак тебя не касается. А твоё внезапное любопытство и слежка за мной вот к чему привели..."
     enji "После этого чувствую себя не в своей тарелке. Сам-то доволен ситуацией?"
 
     "Кисло бросила Энджи."
 
-    hide enji_angried with fastdissolve
+    hide enji
+    with fastdissolve
 
     "Я промолчал. В любом случае, мне не очень приятно было застрять с ней в таком месте и особенно при таких обстоятельствах."
     "Даже без слов было понятно, что я чувствую."
 
-    scene black with averagedissolve
+    scene black
+    with averagedissolve
 
     "Выглядело так, будто она пытается ото всех спрятаться."
     "Если что, прикроюсь тем, что я искал дорогу и заблудился."
@@ -149,54 +159,55 @@ label chapter_1_watching_key:
     "Энджи похоже даже не думала об этом или не обращала внимания, а вот мне становилось неприятно."
     "А затем..."
 
-    scene bg cafe chapter1 with fastdissolve
+    scene bg cafe chapter1
+    with fastdissolve
 
-    show enji_angry_speaking with fastdissolve
-    hide enji_angried
+    show enji speaking angry
+    with fastdissolve
 
     enji "Подумать только... Я завернула в переулок, чтобы через минуту вернуться и обнаружить тебя, якобы \"случайно\" шатающегося неподалеку."
 
     me "..."
     me "Чтобы просто обречь меня следить за Кеем вместе с тобой?.."
 
-    show enji_irritated with averagedissolve
-    hide enji_angry_speaking
-
-    pause(1.5)
-
-    show enji_angry_speaking with averagedissolve
-    hide enji_irritated
-
-    enji "А что мне еще оставалось делать? У меня не было времени отчитывать тебя. Потеряв из виду Кея, я бы потратила впустую последние несколько часов и мою операцию."
-
-    show enji_siding with slowdissolve
-    hide enji_angry_speaking
-
-    me "Но это ж был твой план залезть в это кафе. Я даже не..."
-
-    show enji_speaking with fastdissolve
-    hide enji_siding
-
-    enji "Не перегибай палку. В той ситуации ничего не оставалось, кроме как спрятаться здесь. Нам даже повезло, что я подумала об этом плане отхода заранее и нашла более-менее незаметное место для слежки."
-
-    show enji_usual with averagedissolve
-    hide enji_speaking
-
-    me "Но как ты вообще поняла, что он внезапно решит обернуться и пойти в эту сторону? А еще держу в курсе: мы тут надолго..."
-
-    show enji_siding
-    hide enji_usual
+    show enji irritated
+    with averagedissolve
 
     pause(1.0)
 
-    show enji_speaking_down with fastdissolve
-    hide enji_siding
+    show enji angry speaking
+    with averagedissolve
+
+    enji "А что мне еще оставалось делать? У меня не было времени отчитывать тебя. Потеряв из виду Кея, я бы потратила впустую последние несколько часов и мою операцию."
+
+    show enji siding
+    with slowdissolve
+
+    me "Но это ж был твой план залезть в это кафе. Я даже не..."
+
+    show enji speaking
+    with fastdissolve
+
+    enji "Не перегибай палку. В той ситуации ничего не оставалось, кроме как спрятаться здесь. Нам даже повезло, что я подумала об этом плане отхода заранее и нашла более-менее незаметное место для слежки."
+
+    show enji usual
+    with averagedissolve
+
+    me "Но как ты вообще поняла, что он внезапно решит обернуться и пойти в эту сторону? А еще держу в курсе: мы тут надолго..."
+
+    show enji siding
+    with fastdissolve
+
+    pause(1.0)
+
+    show enji speaking down
+    with fastdissolve
 
     enji "На самом деле, я была уверена в том, что он зайдет в это кафе, но это должно было произойти гораздо позже!"
     enji "К тому же твое появление подействовало мне на нервы, и я потеряла концентрацию."
 
-    show enji_thinking with averagedissolve
-    hide enji_speaking_down
+    show enji thinking
+    with averagedissolve
 
     me "Твоя осведомленность графиком Кея меня пугает."
     me "Да и вообще, а если я действительно заблудился и искал дорогу, случайно наткнувшись на тебя? А вдруг я просто гулял?"
@@ -204,46 +215,57 @@ label chapter_1_watching_key:
     enji "Может я и сталкерша, но я не собиралась заходить так далеко и следить за ним еще и в кафе. Мне просто нужно было кое в чем убедиться."
     enji "А всё пошло наперекосяк: твоё появление, измененные планы Кея... и вот мы здесь."
 
-    hide enji_thinking
+    show enji siding
+    with fastdissolve
 
     "..."
     "Какое-то время мы с Энджи сидели молча, не обращая друг на друга внимание."
     "..."
 
+    show enji speaking down
+    with fastdissolve
+
     enji "Кхмм... Кхммм..."
 
     "Я услышал от неё странное покашливание, и мне показалось, что так она хочет привлечь к себе внимание."
 
-    show enji_upset with fastdissolve
+    show enji upset
+    with fastdissolve
+
     pause(1.0)
-    hide enji_upset averagedissolve
+
+    hide enji upset averagedissolve
 
     "Я поднял голову, едва заметив несколько подавленное выражение лица."
 
     me "Прости, я ..."
     me "..."
 
-    show enji_thinking with averagedissolve
+    show enji thinking
+    with averagedissolve
 
     "Я начал немного неловко, но тут же остановился, увидев, что Энджи сейчас не настроена на беседу."
     "Её лицо будто ненамеренно намекало, что сейчас она пытается совладать с собой."
 
-    hide enji_thinking with fade
+    hide enji thinking
+    with fade
 
     "Я посмотрел на её чашку."
     "Она уже была наполовину пуста, но тоненькая струйка черного кофе капала на стол."
     "Наверное, пила и подавилась. В этот момент лишь это пришло мне в голову."
 
-    show enji_speaking_down with averagedissolve
+    show enji speaking down
+    with averagedissolve
 
     enji "Прошу прощения..."
 
-    show enji_usual with fastdissolve
-    hide enji_speaking_down
+    show enji usual
+    with fastdissolve
 
     "Я кивнул головой, показывая ей, что всё в порядке, и продолжил вальяжно попивать своё латте."
 
-    hide enji_usual with fastdissolve
+    hide enji usual
+    with fastdissolve
 
     "Время стало тянутся безбожно медленно."
     "Я иногда поворачивался и глядел в сторону Кея."
@@ -255,12 +277,13 @@ label chapter_1_watching_key:
 
     "Промямлил я."
 
-    show enji_speaking with fastdissolve
+    show enji speaking
+    with fastdissolve
 
     enji "Нет уж. И так посидим."
 
-    show enji_siding with averagedissolve
-    hide enji_speaking
+    show enji siding
+    with averagedissolve
 
     "Она ответила негромко и кратко."
 
@@ -269,48 +292,57 @@ label chapter_1_watching_key:
     "Я просто набрался терпения и ждал, когда этот момент моей жизни пройдет. Максимально незаметно, как мне хотелось."
     "Я точно не собирался спорить с ней или закатывать мнимую истерику просто из-за того, что мне стало скучно."
 
-    scene bg district evening with slowdissolve
+    scene bg district evening
+    with slowdissolve
 
     pause(1.0)
-    show enji_speaking_down with averagedissolve
+
+    show enji speaking down
+    with averagedissolve
 
     enji "Эх... Вроде бы целый день ничего не делала, позволила себе расслабиться."
 
-    show enji_sorried with fastdissolve
-    hide enji_speaking_down
+    show enji sorried
+    with fastdissolve
 
     enji "Но почему-то сильно устала."
 
-    show enji_thinking with slowdissolve
-    hide enji_sorried
+    show enji thinking
+    with slowdissolve
 
     "Спустя час мы выбрались из духоты людного кафе. От Кея и след простыл."
     "Сидя там, я даже умудрился немного поспать. {w=2} Ну если это можно было назвать сном..."
 
-    hide enji_thinking with averagedissolve
+    hide enji thinking
+    with averagedissolve
 
     "Совсем недавно мы с Энджи покинули улицу, завернули в переулок с ухоженными деревьями и клумбами."
     "Я вдыхал свежий воздух и слегка потягивал спину."
     "Энджи снимала напряжение по-своему."
 
-    show enji_siding with averagedissolve
+    show enji siding
+    with averagedissolve
+
     pause(1.0)
 
-    show enji_thinking with fastdissolve
-    hide enji_siding
+    show enji thinking
+    with fastdissolve
 
     enji "Ах... Но всё же."
 
-    show enji_smiling_down with fastdissolve
-    hide enji_thinking
+    show enji smiling down
+    with fastdissolve
 
     pause(1.0)
-    hide enji_smiling_down with fastdissolve
+
+    hide enji smiling down
+    with fastdissolve
 
     "Слегка улыбаясь, она присела на корточки у стены."
     "Я по привычке засунул руки в карманы, закрыл глаза, уставился в небо и стал наслаждаться вечерним ветерком."
 
-    scene black with fade
+    scene black
+    with fade
 
     enji "Только не показывай, что можешь выглядеть еще более небрежно, чем во время сна в кафе."
 
@@ -326,49 +358,52 @@ label chapter_1_watching_key:
 
     me "Эй!"
 
-    scene bg district evening with averagedissolve
+    scene bg district evening
+    with averagedissolve
 
     pause(0.5)
-    show enji_contemptuous with fastdissolve
+
+    show enji contemptuous
+    with fastdissolve
 
     me "Я не просил озвучивать всё настолько подробно. Или ты еще не закончила?"
 
     "Я сделал максимально серьезный взгляд. Хотя в душе я знал, что в очередной раз дал повод Энджи упрекнуть меня."
 
-    show enji_evil_smiling with averagedissolve
-    hide enji_contemptuous
+    show enji smiling evil
+    with averagedissolve
 
     enji "Отлично. Знала же, что совесть у тебя есть. Теперь осталось сделать так, чтобы она чаще просыпалась."
 
-    show enji_usual with fastdissolve
-    hide enji_evil_smiling
+    show enji usual
+    with fastdissolve
 
     "Выпалила она, а затем вернулась к своему обычному безразличному состоянию."
     "Мне лишь осталось вздохнуть."
 
     me "Никакого послабления, да ?.. "
 
-    show enji_speaking with averagedissolve
-    hide enji_usual
+    show enji speaking
+    with averagedissolve
 
     enji "Пожалуйста, хотя бы в публичных местах, при мне, будь более собранным."
     enji "Знаешь, мне не сильно приятно было переводить взгляд со спящего тебя на..."
 
     "Мне показалось, или Энджи посмотрела куда-то сквозь меня?.."
 
-    show enji_thinking with fastdissolve
-    hide enji_speaking
+    show enji thinking
+    with fastdissolve
 
     pause(1.0)
 
-    show enji_usual with fastdissolve
-    hide enji_thinking
+    show enji usual
+    with fastdissolve
 
     enji "М-м-м... Забудь."
     enji "К чему мне эта головная боль..."
 
-    show enji_upset with averagedissolve
-    hide enji_usual
+    show enji upset
+    with averagedissolve
 
     enji "Всё произошло не так, как я планировала."
     enji "Однако могло быть хуже."
@@ -378,19 +413,20 @@ label chapter_1_watching_key:
     me "Раз уж ты собралась с мыслями, то позволь мне кое-что сказать на твой счет."
     me "Я думаю, ты слишком нервно воспринимаешь то, что происходит вокруг тебя... {w=1} Нет. Не совсем.., если правильнее выразиться..."
 
-    show enji_siding with averagedissolve
-    hide enji_upset
+    show enji siding
+    with averagedissolve
 
     me "Энджи, ты как будто хочешь сделать всё, что там себе придумала, максимально успешно, при этом тратя слишком много сил и заранее накручивая себя."
 
     "Эй, почему она не смотрит, когда я говорю? Она меня вообще слушает? О чем она сейчас думает?"
 
-    show enji_speaking_down with fastdissolve
-    hide enji_siding
+    show enji speaking down
+    with fastdissolve
 
     enji "Возможно."
 
-    hide enji_speaking_down with fastdissolve
+    hide enji
+    with fastdissolve
 
     "Она ответила спокойно, но тот факт, что она не смотрела на меня, значил, что ей было неинтересно."
     "Думаю, я всё-таки некорректно выразил свои мысли."
@@ -406,7 +442,8 @@ label chapter_1_watching_key:
 
 label chapter_1_meeting_natali:
 
-    show natali_usual with fastdissolve
+    show natali usual
+    with fastdissolve
 
     me "А-а... извините...добрый вечер?"
 
@@ -414,8 +451,8 @@ label chapter_1_meeting_natali:
     "Я немного опешил от того, что сначала сердито на неё уставился, и теперь мне нужно было прийти в себя."
     "А еще она знает моё имя..."
 
-    show natali_smiling with fastdissolve
-    hide natali_usual
+    show natali smiling
+    with fastdissolve
 
     $ unknown.who_args["color"] = "#B0E0E6"
     unknown "Прости, я наверное помешала?.."
@@ -424,24 +461,25 @@ label chapter_1_meeting_natali:
 
     "Я попытался соврать, ведь мне не очень хотелось подробно рассказывать, чем я сегодня занимался."
 
-    show natali_concerned_v2 with averagedissolve
-    hide natali_smiling
+    show natali concerned closed_eyes
+    with averagedissolve
 
     pause(0.5)
 
-    show natali_smiling with fastdissolve
-    hide natali_concerned_v2
+    show natali smiling
+    with fastdissolve
 
     unknown "Правда? А мне показалось, что рядом с тобой была Энджи. Я совсем недавно заметила, поэтому хотела подойти и отвлечь её на пару минут. Исключительно по делу."
 
-    show natali_upset with averagedissolve
-    hide natali_smiling
+    show natali upset
+    with averagedissolve
 
     unknown "Но скорее всего, она заметила меня раньше, и незамедлительно ушла. Кажется, я испортила вам день."
 
     me "Нет, всё в порядке. Мы просто случайно встретились, немного поговорили. Не подумайте, что это было что-то особенное."
 
-    show natali_usual with fastdissolve
+    show natali usual
+    with fastdissolve
 
     unknown "Славно, что вы решили провести время вместе. Даже такие незначительные моменты могут быть важны. Кей считает, что это пойдет вам обоим на пользу."
 
@@ -453,16 +491,16 @@ label chapter_1_meeting_natali:
 
     me "Лично я не вижу в этом необходимости. Мы редко пересекаемся на работе."
 
-    show natali_upset with averagedissolve
-    hide natali_usual
+    show natali upset
+    with averagedissolve
 
     unknown "Возможно так какое-то время и будет, но мало ли, какая ответственность легла бы на вас, работая вы совместно. Я думаю, Кей дает вам время, чтобы потом было легче."
 
     me "Я...понимаю. Извините, что вызываем столько проблем на старте."
     me "Могу ли я узнать ваше имя, раз уж вы знаете моё?.."
 
-    show natali_smiling with fastdissolve
-    hide natali_upset
+    show natali smiling
+    with fastdissolve
 
     unknown "Натали. Просто Натали. Очень приятно."
 
@@ -477,29 +515,29 @@ label chapter_1_meeting_natali:
 
     me "Вот оно как..."
 
-    show natali_usual with fastdissolve
-    hide natali_smiling
+    show natali usual
+    with fastdissolve
 
     "Сейчас я отчаянно пытался решить."
     "Рассказать ли Натали правду о том, что привело нас в кафе. И никаких дальнейших недопониманий..."
     "Хотя я только сейчас понял, что вся затея пошла коту под хвост, ведь Кей с самого начала заметил нас. Но знал ли он истинную причину?"
     "Тем временем, Натали продолжила."
 
-    show natali_smiling with fastdissolve
-    hide natali_usual
+    show natali smiling
+    with fastdissolve
 
     natali "Порядок. Не надо ничего объяснять. Кей просто обрадовался, что вы решили провести время вместе. Он почти сразу перестал обращать на вас внимание."
 
     me "Выглядело это так, будто он нас и вовсе не видел, да и не мог, ведь сидел он спиной к взгляду Энджи. А я вообще ничего не видел..."
 
-    show natali_concerned with fastdissolve
-    hide natali_smiling
+    show natali concerned
+    with fastdissolve
 
     natali "В самом деле. Особенно тогда, когда я заметила, что ты спал. У меня не было времени следить за вами. Но краем глаза..."
     natali "Но кроме меня, пожалуй, из собеседников Кея никто не заметил."
 
-    show natali_smiling with fastdissolve
-    hide natali_concerned
+    show natali smiling
+    with fastdissolve
 
     me "Да, я достаточно наслушался этого от Энджи. Я надеюсь, вы все же пришли к правильным выводам."
 
@@ -510,8 +548,8 @@ label chapter_1_meeting_natali:
 
     me "Насколько хорошо вы её знаете?"
 
-    show natali_usual with averagedissolve
-    hide natali_smiling
+    show natali usual
+    with averagedissolve
 
     natali "Горько смотреть правде в глаза, особенно в отношении Энджи, но мне трудно сказать, знаю ли я её настоящую..."
     natali "Не буду вдаваться в подробности, ведь скорее всего большинство из этого ты знаешь."
@@ -528,8 +566,8 @@ label chapter_1_meeting_natali:
 
     me "Ясно. Вам не нужно, если вы не хотите. Не то чтобы меня это как-то касалось."
 
-    show natali_smiling with averagedissolve
-    hide natali_usual
+    show natali smiling
+    with averagedissolve
 
     natali "Не думай, что вы с ней так уж различаетесь. Ты наверняка в курсе, что у вас есть что-то общее, но не хочешь этого признавать."
 
@@ -539,8 +577,8 @@ label chapter_1_meeting_natali:
 
     me "Легко сказать. Не хочу показаться грубым, но судя по всему, ваши советы вам самим же не помогают."
 
-    show natali_upset with fastdissolve
-    hide natali_smiling
+    show natali upset
+    with fastdissolve
 
     "Судя по ней, похоже, я попал в яблочко."
 
@@ -549,14 +587,15 @@ label chapter_1_meeting_natali:
     "..."
     "Она будто запнулась, и я услышал тихий звук."
 
-    show natali_concerned_v2 with averagedissolve
-    hide natali_upset
+    show natali concerned closed_eyes
+    with averagedissolve
 
     natali "Извини, мне звонят. Не вовремя, но я должна идти. Надеюсь, как-нибудь еще поговорим."
 
     me "Спасибо, что уделили мне время. До свидания."
 
-    hide natali_concerned_v2 with fastdissolve
+    hide natali concerned closed_eyes
+    with fastdissolve
 
     "Мы прошли мимо друг друга и разошлись своими путями."
     "Я просто шел с пустой головой по улице, ничего не обдумывая."
@@ -570,7 +609,8 @@ label chapter_1_meeting_natali:
 
 label chapter_1_district_evening:
 
-    scene bg district evening with fade
+    scene bg district evening
+    with fade
 
     "На улице стало немного прохладнее."
     "Я решил проверить время на своих смарт часах."

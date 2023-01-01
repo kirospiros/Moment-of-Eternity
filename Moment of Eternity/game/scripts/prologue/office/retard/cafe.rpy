@@ -13,7 +13,8 @@ label prologue_office_retard:
 
 label prologue_cafe:
 
-    scene bg cafe evening with fade
+    scene bg cafe evening
+    with fade
 
     "..."
     "Незаметно для себя я оказался в знакомом месте."
@@ -38,7 +39,8 @@ label prologue_cafe:
 
 label prologue_cafe_meet_phil:
 
-    show phil_smiling with fastdissolve
+    show phil smiling
+    with fastdissolve
 
     phil "Йо!"
     phil "Увидел тебя с кислой миной и решил присоединиться."
@@ -49,8 +51,8 @@ label prologue_cafe_meet_phil:
 
     me "\"А ты не думал, что завалиться в столовую с этими коробками не очень-то удобно?\""
 
-    show phil_usual
-    hide phil_smiling with fastdissolve
+    show phil usual
+    with fastdissolve
 
     play music goodvibes fadeout 2
 
@@ -81,8 +83,7 @@ label prologue_cafe_meet_phil:
 
 label prologue_phil_about_enji:
 
-    show phil_smiling
-    hide phil_usual with fastdissolve
+    show phil smiling
 
     phil "Да. Кажется, у тебя был разговор с Энджи. Ты из него это понял?"
 
@@ -94,8 +95,7 @@ label prologue_phil_about_enji:
 
     phil "Правильно будет \"Принцепс\"."
 
-    show phil_usual
-    hide phil_smiling with fastdissolve
+    show phil usual
 
     phil "Ну, я про фамилию..."
 
@@ -120,9 +120,8 @@ label prologue_cafe_phil_surname_interrupted:
 
     "Он поправил очки и незамедлительно ответил."
 
-    show phil_speaking_kindly
-
-    hide phil_usual with fastdissolve
+    show phil speaking kindly
+    with fastdissolve
 
     phil "Да, точно. Я, как обычно, заработался и потерял счет времени."
     phil "Я должен был отнести их в лабораторию. Но потом вспомнил, что сначала необходимо проверить пробирки у себя в кабинете, а дальше поставить все точки над и в..."
@@ -136,8 +135,8 @@ label prologue_phil_talks_about_his_motives:
 
     phil "Да, на самом деле меня перевели туда недавно. В колледже я активно изучал биологию, но..."
 
-    show phil_usual
-    hide phil_speaking_kindly with fastdissolve
+    show phil usual
+    with fastdissolve
 
     "Тут энтузиазм Фила прервался."
 
@@ -146,8 +145,8 @@ label prologue_phil_talks_about_his_motives:
 
     ".?."
 
-    show phil_smiling with slowdissolve
-    hide phil_usual with fastdissolve
+    show phil smiling
+    with slowdissolve
 
     phil "Я часто беседую с Кейем, и он написал рекомендательное письмо в местный отдел XiJ, за что я перед ним в большом долгу."
 
@@ -157,13 +156,13 @@ label prologue_phil_talks_about_his_motives:
     phil "На самом деле, мне только дали испытательный срок. Поэтому я обязан трудиться на все 200 процентов."
     phil "У меня есть желание совершенствоваться в медицине."
 
-    show phil_usual
-    hide phil_smiling with fastdissolve
+    show phil usual
+    with fastdissolve
 
     me "\"И кем в итоге ты хотел бы стать?\""
 
-    show phil_smiling
-    hide phil_usual with fastdissolve
+    show phil smiling
+    with fastdissolve
 
     phil "У меня никогда не было никаких талантов, поэтому я думаю, что потяну лишь на фармацевта."
     phil "Но я не собираюсь заниматься нишевой работой, а хочу как раз-таки остаться в лаборатории."
@@ -172,12 +171,14 @@ label prologue_phil_talks_about_his_motives:
     "Я стараюсь засыпать его вопросами, чтобы в ответ он не успевал сделать тоже самое."
     "не не лень открыться человеку, который так со мной откровенничает, но всё же я пока не готов."
     
-    hide phil_smiling with slowdissolve
+    hide phil
+    with slowdissolve
     
     "Я так и не узнал, что в коробках, но думаю это уже не так необходимо, ведь я получил более ценную информацию."
     "Пока я нервно постукиваю пальцами по покрытию стола, в ожидании того, что я дальше предприму, Фил покупает себе рис с овощами."
 
-    show phil_smiling with averagedissolve
+    show phil smiling
+    with averagedissolve
 
     jump prologue_eating_with_phil
 
@@ -204,8 +205,8 @@ label prologue_eating_with_phil:
 
     "Сначала я подумал, что мне показалось, но Фил сделал глоток из бутылки как ни в чем не бывало..."
 
-    show phil_speaking_kindly
-    hide phil_smiling with fastdissolve
+    show phil speaking kindly
+    with fastdissolve
 
     phil "Уххх! Теперь я чувствую себя собой!"
 
@@ -221,8 +222,8 @@ label prologue_eating_with_phil:
 
     phil "В том-то и дело. Я просто не могу без колы. У меня проблемы с пищеварением после такого рода еды, и в такие моменты кола для меня - целительная вода."
 
-    show phil_smiling
-    hide phil_speaking_kindly with fastdissolve
+    show phil smiling
+    with fastdissolve
 
     "В этом случае с ним не поспоришь, но..."
     "Я думаю, что он устроил себе какой-то замкнутый круг: ест острую пищу - запивает её колой ради улучшения её растворения, тем самым создавая себе американские горки во рту."
@@ -245,15 +246,15 @@ label prologue_cafe_ask_about_enji:
 
     "Недолго думая, он отвечает растерянно."
 
-    show phil_usual
-    hide phil_smiling with fastdissolve
+    show phil usual
+    with fastdissolve
 
     phil "Довольно сложный вопрос. Я думаю, она не совсем такая, какой кажется на первый взгляд."
     phil "Она плохо ладит с окружающими, выглядит всегда немного грустной."
     phil "Я всегда пытаюсь её подбодрить, но в итоге всё заканчивается не слишком хорошо."
 
-    show phil_speaking_kindly
-    hide phil_smiling with fastdissolve
+    show phil speaking kindly
+    with fastdissolve
 
     phil "Но поверь, я обязательно стану её другом!"
 
@@ -265,8 +266,8 @@ label prologue_cafe_ask_about_enji:
 
     "А он любыпытный, значит..."
 
-    show phil_usual
-    hide phil_speaking_kindly with fastdissolve
+    show phil usual
+    with fastdissolve
 
     phil "Однако мне пока не удалось как-то в этом продвинутся."
     phil "Я лишь случайно узнал, что она находится здесь не только из-за своих талантов, но также из-за положения в обществе."
@@ -296,8 +297,8 @@ label prologue_cafe_ask_about_enji:
 
 label prologue_invitation_to_events:
 
-    show phil_speaking_kindly
-    hide phil_usual with fastdissolve
+    show phil speaking kindly
+    with fastdissolve
 
     phil "Кстаааааааа-ти!"
     phil "Скоро в городе появится большая движуха, не хочешь остаться на выходные и поглядеть со мной?"
@@ -309,8 +310,8 @@ label prologue_invitation_to_events:
     phil "Я думаю, тебе должно понравится."
     phil "К тому же, ты же не отсюда, так что тебе здесь наверняка всё в новинку. А я с радостью проведу экскурсию по знаметим местам!"
 
-    show phil_usual
-    hide phil_speaking_kindly with fastdissolve
+    show phil usual
+    with fastdissolve
 
     "Вообще-то, я когда-то жил в этом мегаполисе, правда в другом секторе, но я, пожалуй, сделаю вид, что мало со всем этим знаком."
     "Не хочу, чтобы Фил это знал, а то мало ли что ему в голову взбредёт."
@@ -346,8 +347,8 @@ label prologue_phil_proposition_accepted:
 
     me "\"Почему бы и нет.\""
 
-    show phil_smiling
-    hide phil_usual with fastdissolve
+    show phil smiling
+    with fastdissolve
 
     phil "Отлично! Уверен, ты не пожалеешь."
 
@@ -358,8 +359,8 @@ label prologue_phil_proposition_declined:
 
     me "\"Прости, не получится...\""
 
-    show phil_smiling
-    hide phil_usual with fastdissolve
+    show phil smiling
+    with fastdissolve
 
     phil "Ну, ладно. Я просто предложил."
 
@@ -371,21 +372,22 @@ label prologue_phil_proposition_declined:
 
 label prologue_cafe_rest_end:
 
-    show phil_nervous with fastdissolve
-    hide phil_smiling
+    show phil nervous
+    with fastdissolve
 
     phil "Ась!?"
 
     "Резкая смена настроения Фила заставила меня почувствовать дискомфорт."
     "Будто я забыл что-то важное."
 
-    show phil_bittersweet with fastdissolve
-    hide phil_nervous
+    show phil bittersweet
+    with fastdissolve
 
     phil "Боже мой, сколько уже времени прошло."
     phil "Прости, но мне нужно спешить! Я и так уже опоздал... Мне еще с коробками возиться."
 
-    hide phil_bittersweet with fastdissolve
+    hide phil bittersweet
+    with fastdissolve
 
     "Я быстро обернулся и взглянул на часы."
     "Обеденный перерыв закончился почти двадцать минут назад."

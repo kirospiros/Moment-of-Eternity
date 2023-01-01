@@ -7,14 +7,16 @@ label chapter_1_return_home:
     "К тому же, наверняка уйдет еще некоторое время, чтобы найти дорогу обратно."
     "А бегать за кем-то по всему району мне особо-то и хочется."
 
-    scene bg phil_home room evening with averagedissolve
+    scene bg phil_home room evening
+    with averagedissolve
 
     pause(0.5)
 
     "Когда я вернулся к Филу, солнце уже почти село."
     "Я тихо открыл входную дверь, разбулся, пересек кухню и вошел в его комнату."
 
-    show phil_casual with averagedissolve
+    show phil casual
+    with averagedissolve
 
     phil "Добрый вечер!"
 
@@ -23,19 +25,20 @@ label chapter_1_return_home:
 
     me "Прости за мое поведение этим утром. Не следовало так мне поступать."
 
-    show phil_casual_smiling with averagedissolve
-    hide phil_casual
+    show phil casual smiling
+    with averagedissolve
 
     phil "Всё в порядке. Если честно, ко мне мало кто приходил ночевать, поэтому я не расстроился, когда ты ушел. И развлеклись мы неплохо."
 
     "В качестве изивинения я хотел помочь ему с уборкой, но, кажется, Фил недавно закончил: вид у него был усталый."
 
-    show phil_casual with fastdissolve
-    hide phil_casual_smiling
+    show phil casual
+    with fastdissolve
 
     "Тем не менее он счастливо улыбался."
 
-    hide phil_casual with fastdissolve
+    hide phil casual
+    with fastdissolve
 
     "Комната выглядела так, словно в ней ничего не произошло, а воздухе витал несколько приятный аромат хлора... {w=1.2} и каких-то эфирных масел."
     "Не по-девчачьи ли это?"
@@ -43,15 +46,18 @@ label chapter_1_return_home:
     "Прошлая мысль быстро улетучилась."
     "Наверное, таков был творческий беспорядок Фила. Не убрал привычный для себя вид."
 
-    show phil_casual_speaking with averagedissolve
+    show phil casual speaking
+    with averagedissolve
 
     phil "Аэрозоли давно признаны вредными для здоровья."
 
     "Высказался Фил."
 
-    hide phil_casual_speaking with fastdissolve
+    hide phil
+    with fastdissolve
 
-    scene bg phil_home room evening with fade
+    scene bg phil_home room evening
+    with fade
 
     pause(0.5)
 
@@ -69,7 +75,8 @@ label chapter_1_watching_tv:
     "На самом деле, Фил любезно предоставил выбор мне, но я отказался, намекнув, что переварю что угодно."
     "Как вспомню себя беззаботного несколько лет назад, аж больно становится..."
 
-    scene black with slowdissolve
+    scene black
+    with slowdissolve
 
     "Не считая выходных, у меня почти не было свободного времени, и, казалось, я должен использовать его для себя без остатка."
     "Наслаждаться каждой секундой..."
@@ -80,24 +87,26 @@ label chapter_1_watching_tv:
     "В итоге, на выходных я занимаюсь чем попало, под настроение, а стиль моей жизни не сильно отличается от образа бытия ленивца."
     "Добро пожаловать во взрослую жизнь..?"
 
-    scene bg phil_home room evening with fastdissolve
+    scene bg phil_home room evening
+    with fastdissolve
 
-    show phil_casual with fastdissolve
+    show phil casual
+    with fastdissolve
 
     phil "Эй, ты как? Чего приуныл?"
 
     me "Смотри! Сейчас этот парень решиться и побежит в клубную комнату!"
 
-    show phil_casual_relief with fastdissolve
-    hide phil_casual
+    show phil casual relief
+    with fastdissolve
 
     pause(0.2)
-    show phil_casual_relief_2 with fastdissolve
 
-    hide phil_casual_relief
-    pause(0.1)
+    show phil casual relief closed_eyes
+    with fastdissolve
 
-    hide phil_casual_relief_2 with slowdissolve
+    hide phil casual relief closed_eyes
+    with slowdissolve
 
     "Я сделал вид, будто внимательно смотрю фильм, который выбрал Фил."
     "По сюжету вокруг невзрачного паренька внезапно начала крутиться однокурсница."
@@ -127,7 +136,8 @@ label chapter_1_watching_tv:
     "Однако в душе я начал понимать, что за его легкомысленным мальчишеством стоит собственная гордость и упрямство в отношении общества."
     "Возможно, это как раз то, на что вскольз также упоминала Энджи."
 
-    scene black with fade
+    scene black
+    with fade
 
     "Вскоре, после фильма, мы легли спать молча, а наши сердца были слегка отягощены."
     "На ночь мы договорились посмотреть нейтральный фильм, насколько это было возможно, а в итоге получили меланхолию."

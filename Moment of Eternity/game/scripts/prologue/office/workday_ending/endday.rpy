@@ -8,7 +8,8 @@ label prologue_office_choose_ending:
     "Сейчас мне следовало зайти к Кею и сказать, что на сегодня я всё..."
     "Последний раз оглянув комнату, вздохнув от облегчения, я вышел в коридор."
 
-    scene bg office stairs with averagedissolve
+    scene bg office stairs
+    with averagedissolve
 
     play music lounge fadeout 2
 

@@ -3,7 +3,8 @@ label prologue_office_entry:
     # Пролог: Утро - Город - Безделье и Работа
     # Prologue: Morning - Lounging and Working
 
-    scene bg office halls labs v1 with slowdissolve
+    scene bg office halls labs v1
+    with slowdissolve
 
     "Спустя какое-то время мы уже оказались в холле того самого здания, где располагался один из отделов кампании, в котором я и работаю."
     "На общем фоне строение выделялось среди обычных городских высоток, имело гораздо больше этажей, просторные комнаты, и было оборудовано первоклассной техникой."
@@ -14,42 +15,45 @@ label prologue_office_entry:
     "А само здание и прилегающие территории принадлежали как-никак исcледовательской кампании XiJ."
     "Пройдя несколько этапов проверок, авторизации и удостоверения личности на ресепшене, мы направились дальше по коридору в сторону офисов."
 
-    show key_usual at center
+    show key usual
     with fastdissolve
 
     "..."
     "Пока мы шли, я заметил, что вокруг не шумно."
 
-    show key_usual_speaking
-    hide key_usual
+    show key usual speaking
+    with fastdissolve
 
     key "Рабочий день, а в коридорах тихо. Немного необычное явление, ты так не считаешь?"
 
-    hide key_usual_speaking
-    show key_usual
+    show key usual
+    with fastdissolve
 
     me "\"Да, есть такое. Но ты же прекрасно знаешь всех здешних сотрудников, особенно тех лабораторных крыс.\""
 
-    hide key_usual
-    show key_usual_speaking
+    show key usual speaking
+    with fastdissolve
 
     key "Верно. Стоит заметить, что мои подчиненные уже привыкли жить бок о бок с коллегами из старшего исследовательского отдела... Что нельзя сказать про тебя."
     key "Я понимаю, ты здесь недавно и ещё не ко всему привык."
     key "Однако помни, твоя самая главная обязанность - не доставлять проблем корпорации XiJ."
 
-    hide key_usual_speaking
-    show key_usual
+    show key usual
+    with fastdissolve
 
     "..."
 
-    hide key_usual
-    show key_usual_speaking
+    show key usual speaking
+    with fastdissolve
 
     key "Ты же понимаешь, что я напоминаю это не просто так: являясь моим подчинённым, ответственность за тебя будет нести моя компания."
 
+    show key usual
+    with fastdissolve
+
     "Я кивнул ему, выражая своё понимание, ибо  моё дальнейшее молчание ни к чему бы не привело."
 
-    hide key_usual_speaking
+    hide key
     with averagedissolve
     stop music fadeout 3
 
@@ -61,8 +65,9 @@ label prologue_office_corridor:
     "Мы поднялись по ступенькам, ведущих к лифту."
     "..."
 
-    show black with slowdissolve
-    scene bg office halls labs v2 with slowdissolve
+    scene bg office halls labs v2
+    with fade
+
     play music drifting2 fadeout 2
 
     "И вскоре оказались на нужном этаже."
@@ -91,17 +96,20 @@ label prologue_office_corridor:
 label prologue_office_natali_key_interrupt:
 
     $ unknown.who_args["color"] = "#7B68EE"
-    unknown "Кей Корнельевич, можно вас на пару минут?"
+    unknown natali "Кей Корнельевич, можно вас на пару минут?"
 
     "И сейчас, идя прямо по коридору, минуя всякие боковые проходы, я направляюсь в то место, где множество разнообразных и несколько неординарных личностей занимаются своей работой."
     
-    show natali_usual at right with averagedissolve
-    show key_usual at left with averagedissolve
+    show natali usual at right
+    with averagedissolve
+
+    show key usual at left
+    with averagedissolve
 
     "Я уже собрался войти в зал и услышал, как какая-то женщина обратилась к Кею."
 
-    show key_usual_smiles at left with fastdissolve
-    hide key_usual
+    show key usual smiles at left
+    with fastdissolve
 
     "Кей глазами намекнул мне, чтобы я его не ждал и двигался дальше."
     "Действительно, мне нет никакого дела до их разговора."
@@ -154,7 +162,7 @@ label prologue_office_morning_planning:
     "Вскоре я почувствовал, как на мое плечо легла его рука - это был жест, который говорил мне остановиться."
     "Я так и сделал, развернувшись с недовольным выражением лица к Кею."
 
-    show key_usual_smiles with fastdissolve
+    show key usual smiles with fastdissolve
 
     key "Я понимаю, что тебе не терпится начать, но мы не подождали остальных."
 
@@ -169,28 +177,25 @@ label prologue_office_morning_planning:
 
 label prologue_office_meeting_with_colleagues:
 
-    hide key_usual_smiles with fastdissolve
-    show key_usual_smiles:
+    show key usual smiles:
         xalign 0.3
         yalign 1.0
     with fastdissolve
 
-    show enji_irritated:
+    show enji irritated:
         xalign 0.65
         yalign 1.0
 
     key "..."
 
-    show enji_contemptuous:
+    show enji contemptuous:
         xalign 0.65
         yalign 1.0
-    hide enji_irritated
-
-    $ unknown.who_args["color"] = "#7B68EE"
-    unknown "..."
 
     $ unknown.who_args["color"] = "#F0FFFF"
-    unknown "Йо!"
+    unknown phil "..."
+
+    unknown phil "Йо!"
 
     "Последнее явно было адресовано мне, так как прозвучало практически под ухом..."
     "Кажется, один очень знакомый мне человек позади никак не может быть спокойным и тактичным по отношению к товарищам."
@@ -200,59 +205,52 @@ label prologue_office_meeting_with_colleagues:
 
 label prologue_office_main_office_after_meeting:
 
-    show phil_usual at center with fastdissolve
+    show phil usual
+    with fastdissolve
 
     me "\"Полегче, Фил\"."
 
-    hide phil_usual
-
-    show phil_smiling at center with fastdissolve
+    show phil smiling
+    with fastdissolve
 
     "Я лишь мог вздохнуть про себя, что этот тип никогда не меняется..."
 
-    hide phil_smiling
-
-    show phil_usual:
+    show phil usual:
         xalign 0.2
         yalign 1.0
     with fastdissolve
         
 
-    show key_usual_smiles:
+    show key usual smiles:
         xalign 0.45
         yalign 1.0
     with averagedissolve
 
-    show enji_contemptuous:
+    show enji contemptuous:
         xalign 0.7
         yalign 1.0
     with averagedissolve
 
     play music corporationmotivation fadeout 2
 
-    key "Ну, кажется, всё в порядке."
+    show key usual speaking
+
+    side_key usual speaking "Ну, кажется, всё в порядке."
+
+    show key usual smiles
 
     "Кей тоже подметил это, и быстро оглядел нашу троицу."
     "Да, долго ждать не пришлось."
     "Сейчас Кей скажет: \"Команда в сборе.\""
     "Каждый поприве́тствует друг друга, затем он раздаст указания, и дальше всё будет как обычно..."
 
-    hide key_usual_smiles
-    show key_usual_speaking:
-        xalign 0.45
-        yalign 1.0
+    show key usual speaking
     with fastdissolve
 
-    hide key_usual_smiles
+    side_key usual speaking "Все в сборе, оперативно. Доброе утро Фил. Доброе утро Энджи. Рассчитываю на вас."
 
-    key "Все в сборе, оперативно. Доброе утро Фил. Доброе утро Энджи. Рассчитываю на вас."
-
-    show key_usual:
-        xalign 0.45
-        yalign 1.0
+    show key usual
     with fastdissolve
-
-    hide key_usual_speaking
 
     jump prologue_office_main_office_key_trio_talk
 
@@ -261,83 +259,62 @@ label prologue_office_main_office_key_trio_talk:
 
     "Энджи кротко кивнула."
 
-    show phil_speaking_kindly:
-        xalign 0.2
-        yalign 1.0
+    show phil speaking kindly
     with fastdissolve
 
-    phil "Выложимся на полную!"
+    side_phil speaking kindly "Выложимся на полную!"
 
-    hide phil_speaking_kindly
-    show phil_usual:
-        xalign 0.2
-        yalign 1.0
+    show phil usual
     with fastdissolve
 
     "Ответил, будто отрапортовал..."
 
-    show key_usual_speaking:
-        xalign 0.45
-        yalign 1.0
+    show key usual speaking
     with fastdissolve
 
-    key "Правильный настрой, в отличии от кое-кого опоздавшего..."
+    side_key usual speaking "Правильный настрой, в отличии от кое-кого опоздавшего..."
 
-    hide key_usual_speaking
-
-    show key_usual:
-        xalign 0.45
-        yalign 1.0
+    show key usual
     with fastdissolve
 
     "Ить!"
     "Кей вспомнил это в самый неудобный для меня момент..."
     "Фил легкомысленно протянул:"
 
-    phil "Впрочем, ничего нового. Но лучше не вырабатывай такую привычку."
+    show phil speaking kindly
+
+    side_phil speaking kindly "Впрочем, ничего нового. Но лучше не вырабатывай такую привычку."
+
+    show phil usual
 
     "Но в то же время это прозвучало как-то утонченно и философски глубоко..."
 
-    show enji_irritated:
-        xalign 0.7
-        yalign 1.0
+    show enji irritated
     with fastdissolve
 
-    hide enji_contemptuous
-
-    enji "...хех..."
+    side_enji irritated "...хех..."
 
     "..."
     "Я ничем не мог ответить на вполне естественное раздражение Энджи."
     "Какие бы отговорки я ни любил придумывать, сейчас им здесь было не время и не место."
 
-    show enji_usual:
-        xalign 0.7
-        yalign 1.0
+    show enji usual
     with fastdissolve
-
-    hide enji_irritated
 
     "И в этот раз я чувствовал себя особенно виноватым."
     "Заслужить презрение этой гордой девушки весьма просто."
     "И, как и следовало ожидать, когда-то я умудрился сделать это почти сразу..."
     "Кроме, собственно, опозданий, была еще пара глупо спровоцированных ситуаций..."
 
-    hide key_usual
-    show key_usual_speaking:
-        xalign 0.45
-        yalign 1.0
+    show key usual speaking
     with fastdissolve
 
-    hide key_usual
+    side_key usual speaking "Не будем терять время."
 
-    key "Не будем терять время."
-
-    hide key_usual_speaking with slowdissolve
-
-    hide phil_usual with slowdissolve
-
-    hide enji_usual with slowdissolve
+    hide key
+    hide phil
+    hide enji
+    with slowdissolve
 
     jump prologue_office_end_trio_talk
 
@@ -367,23 +344,25 @@ label prologue_office_end_trio_talk:
 
 label prologue_office_enji_interrupt:
 
-    enji "Эй!"
+    side_enji angry speaking "Эй!"
 
     "!?"
 
     play music different fadeout 2.5
 
-    show enji_angried with fastdissolve
+    show enji angry
+    with fastdissolve
 
     "Когда я обернулся, ни Кея, ни Фила уже не было..."
     "Более того, я остался один на один не с самым приятным собеседником."
 
-    hide enji_angried
-    show enji_angry_speaking with fastdissolve
+    show enji angry speaking
+    with fastdissolve
 
     enji "Что ж, похоже, ты не только любишь опаздывать, а еще и предпочитаешь витать в облаках."
 
-    show enji_irritated with fastdissolve
+    show enji irritated
+    with fastdissolve
 
     enji "Боже..."
 
@@ -391,7 +370,8 @@ label prologue_office_enji_interrupt:
     "Но у меня тогда такой вопрос."
     "Что она тут..."
 
-    show enji_speaking with fastdissolve
+    show enji speaking
+    with fastdissolve
 
     enji "Почему я еще здесь, верно?"
 
@@ -399,66 +379,68 @@ label prologue_office_enji_interrupt:
 
     enji "Твои глаза тебя выдают. Ты как открытая книга."
 
-    show enji_usual with fastdissolve
+    show enji usual
+    with fastdissolve
 
     "Кажется, до меня начало доходить."
     "Обычно Энджи уходила вместе с Кейем, а я и Фил разбредались по своим рабочим местам."
     "И раз она тут..."
 
-    show enji_speaking with fastdissolve
+    show enji speaking
+    with fastdissolve
 
     enji "Да, я не получила никакого особого задания от мистера Кея."
     enji "Но это не значит, что я собираюсь валять дурака."
 
-    show enji_thinking with fastdissolve
-    hide enji_speaking
+    show enji thinking
+    with fastdissolve
 
     "Я решил кое-что уточнить."
 
     me "\"Раз уж так вышло, Кей не поручал мне ничего особенного?\""
 
-    show enji_speaking with fastdissolve
-    hide enji_thinking
+    show enji speaking
+    with fastdissolve
 
     enji "Нет, как я поняла, сегодня ты занимаешься тем же, чем и обычно."
     enji "Не мешкай и приступай."
 
-    show enji_angry_speaking with fastdissolve
-    hide enji_speaking
+    show enji angry speaking
+    with fastdissolve
 
     enji "Принц-коротышка уже во всю старается. Не думала, что когда-либо это скажу, но тебе стоит поучиться у него трудолюбию и выносливости."
 
-    show enji_angried with fastdissolve
-    hide enji_angry_speaking
+    show enji angry
+    with fastdissolve
 
     "Я решил возразить."
 
     me "\"Брать пример с Фила? Да у него по жизни ветер в голове.\""
 
-    show enji_angry_speaking with fastdissolve
-    hide enji_angried
+    show enji angry speaking
+    with fastdissolve
 
     enji "Не пойми неправильно. Разговаривать с ним - сплошная морока, но во время работы он хотя бы старается. Более того, у него даже есть талант кое в чем."
 
-    show enji_upset with fastdissolve
-    hide enji_angry_speaking
+    show enji upset
+    with fastdissolve
 
     enji "Если бы не его наивность..."
 
-    show enji_contemptuous with fastdissolve
-    hide enji_upset
+    show enji contemptuous
+    with fastdissolve
 
     "Мне показалось, или я на секунду увидел грусть в глазах Энджи?"
 
-    show enji_usual with fastdissolve
-    hide enji_contemptuous
+    show enji usual
+    with fastdissolve
 
     enji "..."
 
     "..."
 
-    show enji_angry_siding with fastdissolve
-    hide enji_usual
+    show enji angry siding
+    with fastdissolve
 
     "..."
 
@@ -472,8 +454,8 @@ label prologue_office_enji_interrupt:
     "На нас понемногу начали пялиться сотрудники офиса."
     "Я снова начал чувствовать неприятное покалывание в теле."
 
-    show enji_contemptuous with fastdissolve
-    hide engie_angry_siding
+    show enji contemptuous
+    with fastdissolve
 
     enji "..."
 
@@ -484,14 +466,15 @@ label prologue_office_enji_interrupt:
 
     me "\"Слушаюсь и повинуюсь!\""
 
-    hide enji_contemptuous
-    show enji_usual with fastdissolve
+    show enji usual
+    with fastdissolve
 
     "Наверное, я поступил мерзко, ведь я даже не посмотрел ей лицо."
 
     stop music fadeout 3
 
-    hide enji_usual with averagedissolve
+    hide enji
+    with fastdissolve
 
     "Но..."
     "Она ничего мне не ответила, чему я слегка был удивлен."

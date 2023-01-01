@@ -1,7 +1,8 @@
 
 label prologue_office_after_cafe:
 
-    scene bg office main_character workroom evening with slowdissolve
+    scene bg office main_character workroom evening
+    with slowdissolve
 
     "Оставшееся время я трудился в поте лица."
     "Работы было настолько много, что под конец я решил расслабиться, учитывая то, что сегодня я не успею всё закончить."

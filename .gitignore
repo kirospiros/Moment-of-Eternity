@@ -90,7 +90,6 @@ Test/
 **/saves/
 **/cache/
 **/saves/
-**/images/
 **/audio/
 *.rpyc
 *.rpymc

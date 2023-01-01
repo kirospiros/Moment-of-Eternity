@@ -6,7 +6,8 @@ label prologue_went_to_roof:
     "Желание вновь оказаться на крыше оказалось сильнее."
     "Я сел в лифт и поехал на верхний этаж."
 
-    scene bg office stairs with fade
+    scene bg office stairs
+    with fade
 
     "Меня встретила та же лестница и похожий узкий коридор..."
     "Дело в том, что лифт не шел непосредственно на крышу."
@@ -22,7 +23,8 @@ label prologue_went_to_roof:
     "Внезапно услышал нежданный звук."
     "И как только я открыл дверь..."
 
-    scene bg office rooftop sunset with slowdissolve
+    scene bg office rooftop sunset
+    with slowdissolve
 
     jump prologue_met_natali
 
@@ -31,7 +33,8 @@ label prologue_met_natali:
 
     "..?"
 
-    show natali_concerned with fastdissolve
+    show natali concerned
+    with fastdissolve
 
     "..."
 
@@ -39,14 +42,14 @@ label prologue_met_natali:
 
     "Невольно вырвалось у меня..."
 
-    show natali_concerned_v2 with fastdissolve
-    hide natali_concerned
+    show natali concerned closed_eyes
+    with fastdissolve
 
     "Я немного удивился."
     "Но не стоило это так показывать."
     "Женщина, которую я видел сегодня утром, чуть ли не на секунду остановила на мне свой слегка недовольный и обеспокоенный взгляд."
 
-    hide natali_concerned_v2 with fastdissolve
+    hide natali
 
     "А затем с завидной скоростью, в то же время излучая спокойствие, спустилась по лестнице позади меня и ретировалась."
     "Спустя минуту, лишь стук её каблуков едва доносился до моих ушей."
@@ -54,12 +57,14 @@ label prologue_met_natali:
     "Я какое-то время торчал на месте и лишь смотрел на происходящее через левое плечо."
     "Хмм...."
 
-    scene bg office stairs gray with fade
+    scene bg office stairs gray
+    with fade
 
     "\"Поэтому любой мог спокойно там проводить время.\""
     "\"Но самым интересным было то, что кроме меня этой возможностью никто не пользовался.\""
 
-    scene bg office rooftop sunset with fade
+    scene bg office rooftop sunset
+    with fade
 
     jump prologue_roof_met_enji
 
@@ -78,9 +83,13 @@ label prologue_roof_met_enji:
 
     "Теперь мне всё стало понятно."
 
-    show enji_sorried with fastdissolve
+    show enji_sorried
+    with fastdissolve
+
     with Pause(2.5)
-    hide enji_sorried with fastdissolve
+
+    hide enji
+    with fastdissolve
 
     "Я сделал вид, будто не заметил её."
     "Я стоял поодаль, устремив свой взгляд в небо."
@@ -88,13 +97,15 @@ label prologue_roof_met_enji:
     "Но по крайней мере, Энджи делала вид, будто её не интересует ничего, кроме одиночества."
     "Я еще раз тайком взглянул на неё."
 
-    show enji_upset with averagedissolve
+    show enji upset
+    with averagedissolve
 
     "Она точно смотрела куда-то вниз."
     "До этого у неё был виноватый вид, сейчас же она выглядела немного подавленной."
     "Впервые вижу её такой..."
 
-    hide enji_upset with fastdissolve
+    hide enji upset
+    with fastdissolve
 
     "Не думаю, что Энджи пришла бы на крышу просто так."
     "Между ними явно что-то произошло."
@@ -110,7 +121,8 @@ label prologue_roof_met_enji:
     "Независимо от причины, мне это на руку."
     "..."
 
-    show enji_thinking with fastdissolve
+    show enji thinking
+    with fastdissolve
 
     "Тишина..."
     "Лишь ветер иногда пролетал, встряхивая её короткие волосы."
@@ -119,12 +131,14 @@ label prologue_roof_met_enji:
     "Возможно, Энджи, как и я, сейчас приводила мысли в порядок."
     "А ведь если подумать, ей было тяжелее, чем мне."
 
-    hide enji_thinking with slowdissolve
+    hide enji
+    with slowdissolve
 
     "Чтобы меня не заклеймили извращенцем, я больше не смотрел в ее сторону."
     "Опершись на перила забора, что окружал всю крышу многоэтажки, я закрыл глаза и решил насладиться свободой еще какое-то время."
 
-    scene black with normdissolve
+    scene black
+    with normdissolve
 
     "..."
     "..."
@@ -137,21 +151,23 @@ label prologue_office_roof_start_dialogue:
 
     enji "Скажи..."
 
-    scene bg office rooftop sunset with slowdissolve
+    scene bg office rooftop sunset
+    with slowdissolve
 
-    show enji_speaking_down with averagedissolve
+    show enji speaking down
+    with averagedissolve
 
     play music interconnected fadeout 3
 
     "..?"
 
-    show enji_speaking with averagedissolve
-    hide enji_speaking_down
+    show enji speaking
+    with averagedissolve
 
     enji "c чем у тебя ассоциируется высота?"
 
-    show enji_siding with averagedissolve
-    hide enji_speaking
+    show enji siding
+    with averagedissolve
 
     "В её речи и жестах не было ни ноток гордости, ни надменности, ни презрения."
     "Я чувствовал лишь любопытство."
@@ -174,13 +190,13 @@ label prologue_office_roof_enji_question:
 
 label prologue_office_roof_after_answer:
 
-    show enji_usual with fastdissolve
-    hide enji_speaking
+    show enji usual
+    with fastdissolve
 
     me "\"Честно, повторюсь, никогда особо об этом не думал. У меня раньше никогда не возникало четких ассоциаций по этому поводу.\""
 
-    show enji_speaking_down with fastdissolve
-    hide enji_usual
+    show enji speaking down
+    with fastdissolve
 
     enji "Когда смотришь на мир, в котором живешь, возникают и другие мысли..."
     enji "Вид с высоты также может вызвать и противоречивые чувства."
@@ -193,8 +209,8 @@ label prologue_office_roof_after_answer:
     "?"
     "Чувствуя мое недопонимание, она взглянула на меня."
 
-    show enji_speaking with fastdissolve
-    hide enji_speaking_down
+    show enji speaking
+    with fastdissolve
 
     enji "Мир - лишь то, что мы можем ощутить. Ведь у нас нет других способов его воспринимать."
     enji "Разум подсознательно отделяет то, что мы чувствуем, и то, что мы знаем."
@@ -205,8 +221,8 @@ label prologue_office_roof_after_answer:
     enji "Но последнее ощущается тебе более реальным. Забавно получается..."
     enji "Вот такие мысли в твоей голове вызывет вид с высоты, замечаешь ты это или нет."
 
-    show enji_siding with fastdissolve
-    hide enji_speaking with fastdissolve
+    show enji siding
+    with fastdissolve
 
     "..."
     "Ни с того ни с сего, Энджи поделилась со мной такими ... понятными мыслями."
@@ -215,7 +231,8 @@ label prologue_office_roof_after_answer:
     "Каждый раз, стоя здесь и наблюдая за всем с высоты, я невольно сталкивал свой разум, руководствующийся логикой, и опыт, задетый чувствами..."
     "В отличии от повседневной жизни, где подобный процесс протекает размеренно, здесь, высоко над землей, всё это начинает резко обостряться."
 
-    hide enji_siding with averagedissolve
+    hide enji siding
+    with averagedissolve
 
     "Странно выходит."
     "Я ощущал некоего рода дискомфорт, слушая Энджи."
@@ -232,9 +249,13 @@ label prologue_office_roof_after_answer:
 
     "Похоже, мой обеспокоенный вид слегка позабавил Энджи."
 
-    show enji_evil_smiling with fastdissolve
+    show enji smiling evil
+    with fastdissolve
+
     pause 0.8
-    hide enji_evil_smiling with averagedissolve
+
+    hide enji
+    with averagedissolve
 
     "Оставляя меня в недоумении, она тихо ушла."
     "Я какое-то время стоял и размышлял о кое-чем более важном:"

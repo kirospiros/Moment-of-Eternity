@@ -30,23 +30,21 @@ label prologue_city_main_station:
 
 label prologue_city_main_station_norm:
 
-    scene bg station city v3 with fastdissolve
-
-    show key_usual at center
+    scene bg station city v3
+    with fastdissolve
 
     $ unknown.who_args["color"] = "#8B008B"
-    unknown "..."
-
-    hide key_usual
+    unknown key "..."
 
     "Уже при беглом взгляде я понял, кто это был."
+
+    show key usual at center
+
     "Что ж, мне в любом случае придеться сегодня извиняться..."
     "Но причина опущенной головы и моего молчания была в том, что я просто уже не мог выдержать угрызения совести..."
     "А всё потому, что в этот день, этот парень самолично приехал забрать меня на работу."
     "Мне уже стало плохо от того, что я подумал, сколько это хлопот ему принесло."
     "Я глубоко вздохнул, повернулся к нему лицом, пристально посмотрел в глаза, и со всем виноватым видом, который я мог изобразить, искренне произнес:"
-
-    show key_usual at center
 
     me "\"Пожалуйста, простите, что снова вас подвел!\""
 
@@ -60,30 +58,30 @@ label prologue_city_main_station_norm:
 label prologue_city_main_station_key_meeting:
 
     play music lounge fadeout 6
-    show key_usual_worried at center
-    hide key_usual
+    show key usual worried at center
+    with averagedissolve
 
     key "Эх..."
     key "Боже..."
 
-    show key_usual_speaking
-    hide key_usual_worried
+    show key usual speaking
+    with fastdissolve
 
     key "Не часто увидишь такое."
     key "Видимо тебе действительно жаль, раз уж ты прибегнул к формальной форме общения со мной."
     key "Видеть тебя таким немного необычно, поэтому, я думаю, что не зря прождал столько времени, находясь здесь."
     key "Поэтому я уже не сильно сержусь."
 
-    show key_usual at center
-    hide key_usual_speaking
+    show key usual
+    with fastdissolve
 
     "Весьма ожидаемо. Этот человек может с легкостью понимать, что происходит у тебя в голове. Поэтому скрыть что-то от него будет нелегкой задачей."
     "Я не так давно знаком с Константином, но что точно я знаю, он весьма наблюдателен..."
     "В общении с друзьями, становится расслабленным, но часто уходит в себя. Правда, не всегда приятно слушать его мысли."
     "Может Кей сейчас и выглядит немного серьёзным, но он всегда такой, независимо от того, что делает."
 
-    show key_usual_speaking at center
-    hide key_usual
+    show key usual speaking
+    with fastdissolve
 
     key "Так, что-то мы долго тут стоим."
 
@@ -98,7 +96,7 @@ label prologue_city_main_station_key_meeting:
 
     me "\"Что ж, я уже готов на что угодно, Кей.\""
 
-    hide key_usual_speaking
+    hide key
 
     "Несмотря на то, что он - мой босс, я обращаюсь к нему просто по фамилии, и не использую каких-либо формальных предложений."
     "Когда-то давно, а точнее еще при нашей первой встрече, он сам попросил называть себя просто Кей..."
@@ -120,14 +118,14 @@ label prologue_city_main_station_left:
 
     me "\"Что-нибудь особенное сегодня?\""
 
-    show key_usual_speaking at center
+    show key usual speaking
+    with fastdissolve
 
     key "И да, и нет. Однако учитывая, что ты опоздал, то трудиться будешь допоздна."
     key "Без обид, считай это своим наказанием."
 
-    show key_usual
-
-    hide key_usual_speaking
+    show key usual
+    with fastdissolve
 
     me "\"Хех...\""
 
@@ -136,12 +134,14 @@ label prologue_city_main_station_left:
     "А он всего-то на четыре года старше меня."
     "Если я, конечно, не запамятовал..."
 
-    hide key_usual with fastdissolve
+    hide key
+    with fastdissolve
 
     # TODO: <НУЖНО 2 CG: 1 - УЛИЦА, ПО КОТОРОЙ ИДУТ ПЕРСОНАЖИ, 2 - ВИД С ОКНА МАШИНЫ>
     # TODO: Пролог: Утро - Город - Поездка в офис | Prologue: Morning - City - Going to the office.
 
-    scene bg street city v1 with averagedissolve
+    scene bg street city v1
+    with averagedissolve
 
     play music coolride fadeout 3
 

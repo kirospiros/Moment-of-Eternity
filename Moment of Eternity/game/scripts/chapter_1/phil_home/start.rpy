@@ -3,7 +3,8 @@ label phil_home_start:
     # Глава 1: Утро. Дом Фила. Прийти в себя
     # Chapter 1: Morning. Phil's House.
 
-    scene black with fade
+    scene black
+    with fade
 
     $ renpy.pause(1.5)
 
@@ -16,7 +17,7 @@ label phil_home_start:
     "В голове проносились разные не однозначные варианты событий, но одно мне показалось наиболее вероятным, и..."
 
     $ unknown.who_args["color"] = "#cbcbcb"
-    unknown "\"Х\#р\#\#о \@ак в\@\$\%л, да?...\""
+    unknown phil "\"Х\#р\#\#о \@ак в\@\$\%л, да?...\""
 
     "..."
     "Что это?"
@@ -28,7 +29,8 @@ label phil_home_start:
 
 label chapter_1_awakening:
 
-    scene bg phil_home room blured v2 with fade
+    scene bg phil_home room blured v2
+    with fade
 
     $ renpy.pause(1.5)
 
@@ -37,17 +39,20 @@ label chapter_1_awakening:
     "Всё что я мог сделать - это простонать, в ожидании того, когда я начну ощущать хотя бы признаки нормального состояния."
     "Я закрыл глаза."
 
-    scene bg phil_home room blured v1 with fade
+    scene bg phil_home room blured v1
+    with fade
 
     $ renpy.pause(1.5)
 
     "И открыл их снова."
 
-    scene bg phil_home room with fade
+    scene bg phil_home room
+    with fade
 
     $ renpy.pause(0.5)
 
-    show phil_casual_smiling with fastdissolve
+    show phil casual smiling
+    with fastdissolve
 
     me "А-а-а!"
 
@@ -65,37 +70,38 @@ label chapter_1_awakening:
 
 label chapter_1_phil_morning_conversation:
 
-    show phil_casual_speaking
-    hide phil_casual_smiling with averagedissolve
+    show phil casual speaking
+    with averagedissolve
 
     phil "Хех, прости."
     phil "Ты выглядел таким несобранным, что мне очень захотелось подшутить."
 
-    show phil_casual
-    hide phil_casual_speaking with fastdissolve
+    show phil casual
+    with fastdissolve
 
     me "...Что происходит?"
 
-    show phil_casual_relief
-    hide phil_casual with fastdissolve
+    show phil casual relief
+    with fastdissolve
 
     phil "А-а, так ты не помнишь... Получается, здорово ты нахрючился."
     phil "Но не волнуйся, сегодня суббота, так что никто об этом не знает, кроме меня."
 
-    show phil_casual_relief_2
-    hide phil_casual_relief with averagedissolve
+    show phil casual relief closed_eyes
+    with averagedissolve
 
     me "Я не очень понимаю, но чтобы я тут не вытворял, пожалуйста, оставь это в секрете."
     me "Не вздумай проболтаться Кею или Энджи."
 
-    show phil_casual_speaking with slowdissolve
-    hide phil_casual_relief_2
+    show phil casual speaking
+    with slowdissolve
 
     phil "Конечно. Я умею хранить секреты."
 
     "Ага, так я и поверил."
 
-    hide phil_casual_speaking with fade
+    hide phil casual speaking
+    with fade
 
     me "Эххх..."
 
@@ -108,21 +114,22 @@ label chapter_1_phil_morning_conversation:
     "..."
     "Сползло..? Погодите."
 
-    show phil_casual_speaking with fastdissolve
+    show phil casual speaking
+    with fastdissolve
 
     phil "Вообще, предполагалось, что я уложу тебя где-нибудь в другом месте, но в том состоянии тебя было трудно доставить в другую комнату."
     phil "В итоге, когда я лег спать на кровать, ты, кажется, разозлился, то ли на меня, то ли на себя, что перебрал. И силой стащил меня отсюда, а сам рухнул."
     phil "Я был пьян, но точно помню, что ночью ты ворочался и мычал, хех, бедняга. А под утро съехал на пол, обнимая подушку."
 
-    show phil_casual with averagedissolve
-    hide phil_casual_speaking
+    show phil casual
+    with averagedissolve
 
     "Кринж."
     "Мне стало немного стыдно, когда я представил себе такую картину. Наверное, и повода не было столько выпивать."
     "Я на сто процентов уверен, что всё это дело рук Фила."
 
-    show phil_casual_smiling with slowdissolve
-    hide phil_casual
+    show phil casual smiling
+    with slowdissolve
 
     "Скорее всего, я просто оказался здесь по-случайности, он начал рассказывать какие-то нелепые вещи со серьёзным лицом."
     "И вскоре беззаботный я почему-то решил повеселиться на всю катушку."
@@ -130,8 +137,8 @@ label chapter_1_phil_morning_conversation:
 
     me "Извини, но просить прощения я у тебя не буду."
 
-    show phil_casual_speaking with averagedissolve
-    hide phil_casual_smiling
+    show phil casual speaking
+    with averagedissolve
 
     phil "Извинения приняты! Но, похоже, ты еще не полностью пришел в себя."
 
@@ -139,10 +146,10 @@ label chapter_1_phil_morning_conversation:
 
     me "Мне надо прогуляться. Пока."
 
-    hide phil_causal_speaking
+    hide phil
 
-    phil "Постой!"
-    phil "А кто поможет убрать комнату?"
+    side_phil casual speaking "Постой!"
+    side_phil casual speaking "А кто поможет убрать комнату?"
 
     "Слегка шатаясь и..."
     "игнорируя просьбу Фила, я быстро обулся и вышел на улицу."

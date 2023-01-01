@@ -3,7 +3,8 @@ label chapter_1_district_the_walk:
     # Глава 1: День - Прогулка
     # Chapter 1: Day - The Walk
 
-    scene bg district morning with slowdissolve
+    scene bg district morning
+    with slowdissolve
 
     "Какое прекрасное утро!"
     "Я решил избавиться от похмелья благодатной прогулкой."
@@ -28,7 +29,9 @@ label chapter_1_district_the_walk:
     # Пояснение об использовании тегов: https://www.renpy.org/doc/html/text.html
     "Или из-за того, что похмелье еще не прошло, я был более {w=0.8}...азартным?"
 
-    scene bg vending_machine with slowdissolve
+    scene bg vending_machine
+    with slowdissolve
+
     pause(1.5)
 
     me "Фух..."
@@ -41,14 +44,18 @@ label chapter_1_district_the_walk:
     "Поэтому пришлось выбирать более удобное место дальше по списку... Внутри также не было никаких специальных мест для сидения."
     "..."
 
-    scene black with fade
+    scene black
+    with fade
+
     pause(0.5)
 
     "Редкий ветерок, иногда посещавший этот двор, слегка трепетал мои волосы."
     "Вдалеке я слышал легкий шум улиц спального района."
     "Я посидел в таком состоянии несколько минут, и, открывая глаза,"
 
-    scene bg vending_machine with slowdissolve
+    scene bg vending_machine
+    with slowdissolve
+
     pause(0.5)
 
     "заметил, что похмелье, благодаря проведенному времени на улице, немного выветрилось."
@@ -98,8 +105,8 @@ label chapter_1_waterbottle_stranger:
 
     $ unknown.who_args["color"] = color="#FFE4E1"
 
-    unknown "Э ̄ то ... "
-    unknown "Прошу прощения, но не могли бы вы отдать мне мою воду..?"
+    unknown sae "Э ̄ то ... "
+    unknown sae "Прошу прощения, но не могли бы вы отдать мне мою воду..?"
 
     "Я услышал мягкий, но слегка обеспокоенный голос."
     "И я замер, призадумавшись."
@@ -107,29 +114,29 @@ label chapter_1_waterbottle_stranger:
     "Не то чтобы я не понимал, что она означала, ведь это было междометие. К тому же, все ученики в школе учат три основных мировых языка, один из которых - общевосточный."
     "Я медленно повернулся к неожиданному собеседнику, пытаясь смастерить улыбку на лице."
 
-    show sae_unf_confused at center
+    show sae uniform confused at center
     with slowdissolve
 
     me "Так это вы оставили воду, простите."
 
     "Как только она попыталась заговорить..."
 
-    show sae_unf_badly_surprised with averagedissolve
-    hide sae_unf_confused
-    show sae_unf_confused_speaking with averagedissolve
+    show sae uniform badly surprised
+    with averagedissolve
 
-    hide sae_unf_confused
-    show sae_unf_confused with averagedissolve
+    show sae uniform speaking confused
+    with averagedissolve
 
-    hide sae_unf_confused_speaking
-    show sae_unf_badly_surprised with averagedissolve
+    show sae uniform confused
+    with averagedissolve
 
-    hide sae_unf_confused
+    show sae uniform badly surprised
+    with averagedissolve
 
     "На её милом лице отразилась смесь разнообразных эмоций, отчего я сам пришел в замешательство."
     "Однако спустя секунду"
 
-    hide sae_unf_badly_surprised superfastdissolve
+    hide sae
 
     "с завидной скоростью для такой малышки,"
     "она выхватила бутылку с водой из моей раслабленной руки"
@@ -166,11 +173,11 @@ label chapter_1_call_to_key:
     "..."
     "..."
 
-    key "Приятно тебя слышать, но я сейчас занят, поэтому говори быстрее."
+    side_key usual speaking "Приятно тебя слышать, но я сейчас занят, поэтому говори быстрее."
 
     me "Я сейчас отправлю сообщение, в котором будет содержаться сумма и номер моей карты. Думаю, ты понял, что..."
 
-    key "Без проблем. Но потом вернешь. До связи."
+    side_key usual speaking "Без проблем. Но потом вернешь. До связи."
 
     me "Конечно."
 
@@ -190,7 +197,9 @@ label chapter_1_soda_drinking:
 
     "И через пару минут мои надежды оправдались: я потягивал вкусную газировочку, продолжая свою прогулку по улицам."
 
-    scene bg district day with averagedissolve
+    scene bg district day
+    with averagedissolve
+
     pause(0.5)
 
     "Тем не менее, газировка не могла улучшить моё дурное настроение."
@@ -217,13 +226,14 @@ label chapter_1_soda_drinking:
 
 label chapter_1_district_enji_meeting:
 
-    show enji_siding with averagedissolve
+    show enji siding
+    with averagedissolve
+
     pause(0.5)
 
-    hide enji_siding with slowdissolve
-    pause(0.3)
+    scene bg district day
+    with fade
 
-    scene bg district day with fade
     pause(0.5)
 
     "Это ведь была Энджи? На пару секунд мне привиделась знакомая фигура, которая скрылась за придорожной клумбой и вскоре исчезла за углом другой улицы."

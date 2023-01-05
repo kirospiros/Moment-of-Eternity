@@ -89,11 +89,11 @@ Test/
 *.vscode/
 **/saves/
 **/cache/
-**/saves/
 **/audio/
+**/images/
+**/gui/
 *.rpyc
 *.rpymc
-*.mp3
 log.txt
 traceback.txt
 errors.txt

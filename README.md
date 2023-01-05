@@ -7,7 +7,7 @@
 [Media files](https://disk.yandex.ru/d/qYxQoUyCMfmR0g)
 
 Ссылка на аудио файлы
-[Google Drive] (https://drive.google.com/file/d/1llIh6t8GTfEuGe7yjhn3dccf9Dtss85J/view?usp=sharing)  
+[Google Drive](https://drive.google.com/file/d/1llIh6t8GTfEuGe7yjhn3dccf9Dtss85J/view?usp=sharing)  
 
 ## Обратная связь
 

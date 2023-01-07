@@ -5,17 +5,17 @@ label prologue_office_roof_enji_answer_true:
     show enji smiling down
     with averagedissolve
 
-    pause
+    with Pause(0.4)
 
     show enji siding
-    with fastdissolve
+    with slowdissolve
 
-    pause
+    with Pause(0.2)
 
     show enji usual
-    with fastdissolve
+    with averagedissolve
 
-    "По её мимолетной улыбке я понял, что ей понравился мой искренний ответ."
+    "По мимолетной улыбке я понял, что ей понравился мой искренний ответ."
     "..."
     "Пожалуй я рад, что смог не разочаровать её. Хотя я не планировал ничего такого."
     "Далее Энджи заговорила, будто подводя к немного другой теме."

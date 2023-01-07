@@ -1,5 +1,5 @@
 label prologue_office_entry:
-    
+
     # Пролог: Утро - Город - Безделье и Работа
     # Prologue: Morning - Lounging and Working
 
@@ -99,16 +99,22 @@ label prologue_office_natali_key_interrupt:
     unknown natali "Кей Корнельевич, можно вас на пару минут?"
 
     "И сейчас, идя прямо по коридору, минуя всякие боковые проходы, я направляюсь в то место, где множество разнообразных и несколько неординарных личностей занимаются своей работой."
-    
-    show natali usual at right
+
+    show key usual:
+        xalign 0.2
+        yalign 1.0
     with averagedissolve
 
-    show key usual at left
+    show natali usual:
+        xalign 0.8
+        yalign 1.0
     with averagedissolve
 
     "Я уже собрался войти в зал и услышал, как какая-то женщина обратилась к Кею."
 
-    show key usual smiles at left
+    show key usual smiles:
+        xalign 0.2
+        yalign 1.0
     with fastdissolve
 
     "Кей глазами намекнул мне, чтобы я его не ждал и двигался дальше."
@@ -219,7 +225,7 @@ label prologue_office_main_office_after_meeting:
         xalign 0.2
         yalign 1.0
     with fastdissolve
-        
+
 
     show key usual smiles:
         xalign 0.45

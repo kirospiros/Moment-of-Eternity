@@ -83,10 +83,10 @@ label prologue_roof_met_enji:
 
     "Теперь мне всё стало понятно."
 
-    show enji_sorried
+    show enji sorried
     with fastdissolve
 
-    with Pause(2.5)
+    with Pause(1.5)
 
     hide enji
     with fastdissolve

@@ -1,7 +1,7 @@
 label prologue_office_start_working:
 
-    # Пролог: Утро - Город - Безделье и Работа 2
-    # Prologue: Morning - Lounging and Working 2
+    # Пролог: День - Город - Безделье и Работа 2
+    # Prologue: Noon - Lounging and Working 2
 
     scene bg office main_character workroom v1
     with slowdissolve

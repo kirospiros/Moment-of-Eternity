@@ -10,6 +10,8 @@ label prologue_went_to_key:
 
     jump prologue_office_report_key
 
+# Вечер - Город - Предложение Кея
+# Evening - City - Key's Proposal
 
 label prologue_office_report_key:
 
@@ -103,7 +105,7 @@ label prologue_office_surprise_key:
     key "Я про твои частые опоздания."
     key "А вот с этим у тебя должно стать меньше проблем."
 
-    show key usual 
+    show key usual
     with fastdissolve
 
     "Кей достал из заднего кармана часы и протянул их мне."
@@ -157,7 +159,7 @@ label prologue_office_surprise_key:
     "Я тихо и нервно сглотнул."
     "Ну, да, конечно..."
 
-    key "А ты думал, это за прото так?"
+    key "А ты думал, это за проcто так?"
     key "Вообще-то, тебе следовало купить нечто подобное уже давно, так что не благодари меня."
 
     "Э-э-эмм..."
